@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
-from email.header import Header
-from email.mime.text import MIMEText
-from email.utils import parseaddr, formataddr
-from email.mime.multipart import MIMEMultipart
-from email.mime.application import MIMEApplication
+from Email.header import Header
+from Email.mime.text import MIMEText
+from Email.utils import parseaddr, formataddr
+from Email.mime.multipart import MIMEMultipart
+from Email.mime.application import MIMEApplication
 import smtplib
 import configparser
 import FileUtil as oa
