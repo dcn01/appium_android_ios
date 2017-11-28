@@ -9,9 +9,23 @@ from email.utils import parseaddr, formataddr
 
 import configparser
 
-from common.TFile import *
-import TString as String
+from ThinkCore.TFile import *
+import ThinkCore.TString as String
 
+def hasConfigKey(config,name,key):
+    try:
+        config[name][key]
+        return True
+    except Exception as e:
+        print(e)
+    return False
+
+def getConfigValue(config,name,key):
+    try:
+        return config[name][key]
+    except Exception as e:
+        print(e)
+    return ""
 
 # 邮箱
 class TEmail:
@@ -24,13 +38,20 @@ class TEmail:
         # 读取配置信息
         config = configparser.ConfigParser()
         config.read(file, encoding='utf-8')
-        self.to_addr = eval(config['DEFAULT']['to_addr'])
-        self.mail_host = config['DEFAULT']['mail_host']
-        self.mail_user = config['DEFAULT']['mail_user']
-        self.mail_pass = config['DEFAULT']['mail_pass']
-        self.port = config['DEFAULT']['port']
-        self.title = config['DEFAULT']['title']
-        self.body = config['DEFAULT']['body']
+        if(hasConfigKey(config,'DEFAULT','to_addr')):
+            self.to_addr = eval(getConfigValue(config,'DEFAULT','to_addr'))
+        if (hasConfigKey(config, 'DEFAULT', 'mail_host')):
+            self.mail_host = getConfigValue(config,'DEFAULT','mail_host')
+        if (hasConfigKey(config, 'DEFAULT', 'mail_user')):
+            self.mail_user = config['DEFAULT']['mail_user']
+        if (hasConfigKey(config, 'DEFAULT', 'mail_pass')):
+            self.mail_pass = config['DEFAULT']['mail_pass']
+        if (hasConfigKey(config, 'DEFAULT', 'port')):
+            self.port = config['DEFAULT']['port']
+        if (hasConfigKey(config, 'DEFAULT', 'title')):
+            self.title = config['DEFAULT']['title']
+        if (hasConfigKey(config, 'DEFAULT', 'body')):
+            self.body = config['DEFAULT']['body']
 
     def formatAddr(self, s):
         name, addr = parseaddr(s)
@@ -64,16 +85,16 @@ class TEmail:
         if TFile(reportFile, "r").existFile() == True:
             part = MIMEApplication(open(reportFile, 'rb').read())  # 附件
             part.add_header('Content-Disposition', 'attachment', filename=TFile(reportFile).getFileName())
-        msg.attach(part)
+            msg.attach(part)
         try:
             smtpServer = smtplib.SMTP()
             smtpServer.connect(smtp_server, int(port))  # 25 为 SMTP 端口号
-            smtpServer.set_debuglevel(1)
+            # smtpServer.set_debuglevel(1)
             smtpServer.login(from_addr, password)
             smtpServer.sendmail(from_addr, to_addr, msg.as_string())
-            print "email send success"
+            print("email send success")
         except smtplib.SMTPException as e:
-            print "Error: %s" % e
+            print("Error: %s" % e)
         finally:
             smtpServer.quit()
 

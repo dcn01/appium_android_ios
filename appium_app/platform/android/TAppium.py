@@ -5,7 +5,7 @@ from multiprocessing import Process
 import threading
 import time
 import random
-from TAdb import *
+from appium_app.platform.android.TAdb import *
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
@@ -22,7 +22,8 @@ class TAppium:
     #启动服务
     def startServer(self):
         print("start server for %s" % self.devices)
-        cmd = "appium --session-override  -p %s -bp %s -U %s" %(self.port, self.bport, self.devices)
+        cmd = u"appium --session-override  -p %s -bp %s -U %s" %(self.port, self.bport, self.devices)
+        #appium -a 127.0.0.1 -p 4727 -bp 4728 -U 3DN6T16827002332 --session-override
         runServer = RunServer(cmd)
         process = Process(target=runServer.start())
         process.start()
@@ -49,17 +50,18 @@ class TAppium:
         response = None
         url = " http://127.0.0.1:"+ self.port + "/wd/hub"+"/status"
         try:
-            response = urllib.urlopen(url, timeout=5)
+            response = urllib.request.urlopen(url, timeout=5)
             if str(response.getcode()).startswith("2"):
                 return True
             else:
                 return False
         except Exception as e:
-            print e
+            print(e)
             return False
         finally:
             if response:
                 response.close()
+
 
 class RunServer(threading.Thread):
     def __init__(self, cmd):
@@ -84,7 +86,7 @@ if __name__ == "__main__":
             appium_server.startServer()
             while not appium_server.isRunnnig():
                 time.sleep(2)
-            print "test"
+            print("test")
         # runnerPool(l_devices)
         # stopAppiumMacAndroid(l_devices)
         # writeExcel()

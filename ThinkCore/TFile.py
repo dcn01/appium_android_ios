@@ -12,19 +12,19 @@ class TFile:
         self.method = method
         self.fileHandle = None
 
-    def writeTxt(self, line):
+    def writeText(self, line):
         if self.existFile():
             self.fileHandle = open(self.file, self.method)
             self.fileHandle.write(line + "\n")
             self.fileHandle.close()
 
-    def appendTxt(self, line):
+    def appendText(self, line):
         if self.existFile():
             self.fileHandle = open(self.file, 'a')
             self.fileHandle.write(line + "\n")
             self.fileHandle.close()
 
-    def readTxtRow(self):
+    def readTextRow(self):
         resutl = ""
         if self.existFile():
             self.fileHandle = open(self.file, self.method)
@@ -32,7 +32,7 @@ class TFile:
             self.fileHandle.close()
         return resutl
 
-    def readTxtRows(self):
+    def readTextRows(self):
         if self.existFile():
             self.fileHandle = open(self.file, self.method)
             file_list = self.fileHandle.readlines()
@@ -68,10 +68,10 @@ class TFile:
         return os.path.basename(self.file)
 
 # if __name__ == '__main__':
-#     bf = TFile(r"D:\Project\Python_Project\TestFramework\file\11111.txt")
+#     bf = TFile(r"D:\Project\Python_Project\TestFramework\file\11111.Text")
 #     print(bf.getFileName())
 #     if bf.existFile() == False:
 #         bf.mkFile()
-#     bf.writeTxt("2222222222222")
-#     bf.appendTxt("33333333333333333")
-#     bf.appendTxt("344444444444444444")
+#     bf.writeText("2222222222222")
+#     bf.appendText("33333333333333333")
+#     bf.appendText("344444444444444444")

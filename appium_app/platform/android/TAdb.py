@@ -9,6 +9,7 @@ import math
 from math import ceil
 import subprocess
 
+
 # android 设备连接器
 # http://www.cydtest.com/?p=3532
 # http://blog.163.com/z_hongc/blog/static/2136400120113176460523/
@@ -39,7 +40,6 @@ class TAdb(object):
         #     return True
         # else:
         #     return False
-
         return [device for device in devices if len(device) > 2]
 
     # 连接设备
@@ -104,6 +104,12 @@ class TAdb(object):
 
         # 安装apk  option( -r ) 加 -r 参数，保留已设定数据，重新安装
 
+    def isSoftinputShown(self):
+        result = self.sendCommand("shell dumpsys input_method ")
+        if result.find("mInputShown=true") >= 1 | result.find("mWindowVisible=true") >= 1:
+            return True;
+        return False;
+
     def installApk(self, filePath, option=""):
         result = "";
         if (len(option) > 0 == True):
@@ -111,75 +117,60 @@ class TAdb(object):
         else:
             result = self.sendCommand("install " + filePath)
         result = result.split(" ")
-        # print(result[4])
         return result
 
     # 卸载APK(如果加 -k 参数，为卸载软件但是保留配置和缓存文件)
     # 包的主包名
     def uninstallApk(self, packagename, option=""):
-        # adb uninstall apk包的主包名
+        # adb  apk包的主包名
         # adb install - r apk包
-        pass
+        return self.sendCommand("uninstall " + packagename)
 
-        # 对某一模拟器操作
-        # adb - s
-        # 模拟器编号
-        # 命令
+    #获取log日志
+    def getLog(self):
+        return self.sendCommand("logcat")
 
-        # 查看模拟器log信息
-        # adb logcat
+    # 获取管理员权限
+    def root(self):
+        return self.sendCommand("root")
 
-        # 获取管理员权限
-        # adb root
+    # 获取设备ID号
+    # adb get-serialno
+    # 获取设备的ID和序列号：
+    #      adb get-product
+    #      adb get-serialno
 
+    # 开启adb服务
+    def startServer(self):
+        return self.sendCommand("start-server")
 
-# 获取设备ID号
-# adb get-serialno
-# 获取设备的ID和序列号：
-#      adb get-product
-#      adb get-serialno
+    # 关闭adb服务
+    def killServer(self):
+        return self.sendCommand("kill-server")
 
-# 开启adb服务
-# adb start-server
+    # 挂在分区(可使系统分区重新可写)
+    def remount(self):
+        return self.sendCommand("remount")
 
-# 关闭adb服务
-# adb kill-server
+    # 发布端口（可以设置任意的端口号，做为主机向模拟器或设备的请求端口）
+    # adb forward tcp:5555 tcp:8000
 
-# 挂在分区(可使系统分区重新可写)
-# adb remount
-
-# 发布端口（可以设置任意的端口号，做为主机向模拟器或设备的请求端口）
-# adb forward tcp:5555 tcp:8000
-
-# 关机命令
-# adb shell reboot -p
-
-# 显示系统中全部Android平台：
-#     android list targets
-
-# 显示系统中全部AVD（模拟器）：
-#     android list avd
-
-# 创建AVD（模拟器）：
-#     android create avd --name 名称 --target 平台编号
-
-# 启动模拟器：
-#     emulator -avd 名称 -sdcard ~/名称.img (-skin 1280x800)
-
-# 删除AVD（模拟器）：
-#     android delete avd --name 名称
-
-# 查看bug报告：
-# adb bugreport
+    # 关机命令
+    def reboot(self):
+        return self.sendCommand("shell reboot -p ")
 
 
+    # 查看bug报告：
+    def getBugReport(self):
+        return self.sendCommand("bugreport ")
 
     # 得到手机信息
     def getPhoneInfo(self, devices):
         cmd = "adb -s " + devices + " shell cat /system/build.prop "
         print(cmd)
         # phone_info = os.popen(cmd).readlines()
-        phone_info = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.readlines()
+        phone_info = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,
+                                      stderr=subprocess.PIPE).stdout.readlines()
         result = {"system-realease": "", "model": "", "brand": "", "device": ""}
         release = "ro.build.version.release="  # 版本
         model = "ro.product.model="  # 型号
@@ -203,7 +194,6 @@ class TAdb(object):
         # print(result)
         return result
 
-
     # 得到最大运行内存
     def getPhoneMenTotal(self, devices):
         cmd = "adb -s " + devices + " shell cat /proc/meminfo"
@@ -216,7 +206,6 @@ class TAdb(object):
                 break
         return int(men_total)
 
-
     # 得到几核cpu
     def getPhoneCpuKel(self, devices):
         cmd = "adb -s " + devices + " shell cat /proc/cpuinfo"
@@ -228,11 +217,11 @@ class TAdb(object):
                 int_cpu += 1
         return str(int_cpu) + "核"
 
-
     # 得到手机分辨率
     def getAppPix(self, devices):
         result = os.popen("adb -s " + devices + " shell wm size", "r")
         return result.readline().split("Physical size:")[1]
+
 
 if __name__ == '__main__':
     reuslt = TAdb().getAttachedDevices()
