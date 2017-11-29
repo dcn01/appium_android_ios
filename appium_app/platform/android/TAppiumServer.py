@@ -11,8 +11,12 @@ PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
 )
 
+
 #appium 启动服务
-class TAppium:
+class TAppiumServer:
+
+    def __init__(self):
+        pass
 
     def __init__(self, port, bport, devices):
         self.port = str(port)
@@ -82,7 +86,7 @@ if __name__ == "__main__":
             app["port"] = str(port)
             app["devices"] = devices
             l_devices.append(app)
-            appium_server = TAppium(port=port, bport=bpport, devices=devices)
+            appium_server = TAppiumServer(port=port, bport=bpport, devices=devices)
             appium_server.startServer()
             while not appium_server.isRunnnig():
                 time.sleep(2)

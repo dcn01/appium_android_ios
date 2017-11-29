@@ -5,7 +5,7 @@ import os
 from time import sleep
 import threading
 from appium_app.platform.android.TAdb import *
-from appium_app.platform.android.TAppClient import *
+from appium_app.platform.android.TAppiumDesktop import *
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)

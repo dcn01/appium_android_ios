@@ -63,7 +63,7 @@ class TAdb(object):
         command = "reboot"
         if len(option) > 7 and option in ("bootloader", "recovery",):
             command = "%s %s" % (command, option.strip())
-        return self.sendCommand(command)
+        return self.sendCommand("shell reboot -p")
 
     # 将电脑文件拷贝到手机里面
     def push(self, local, remote):
@@ -155,11 +155,6 @@ class TAdb(object):
     # 发布端口（可以设置任意的端口号，做为主机向模拟器或设备的请求端口）
     # adb forward tcp:5555 tcp:8000
 
-    # 关机命令
-    def reboot(self):
-        return self.sendCommand("shell reboot -p ")
-
-
     # 查看bug报告：
     def getBugReport(self):
         return self.sendCommand("bugreport ")
@@ -221,6 +216,11 @@ class TAdb(object):
     def getAppPix(self, devices):
         result = os.popen("adb -s " + devices + " shell wm size", "r")
         return result.readline().split("Physical size:")[1]
+
+    def tap(self, x,y):
+        os.system("adb shell input tap " + x + " " + y)
+
+
 
 
 if __name__ == '__main__':

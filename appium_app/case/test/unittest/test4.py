@@ -41,6 +41,8 @@ class TestSequenceFunctions(unittest.TestCase):
           element = random.choice(self.seq)
           self.assertTrue(element not in self.seq)
 
+def test():
+    unittest.main();
 
 if __name__ == '__main__':
    # unittest.main()

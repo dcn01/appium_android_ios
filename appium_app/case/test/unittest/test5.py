@@ -42,11 +42,15 @@ class TestSequenceFunctions(unittest.TestCase):
           # element = random.choice(self.seq)
           # self.assertTrue(element not in self.seq)
 
-if __name__ == '__main__':
+def test():
     # 构造测试集
     suite = unittest.TestSuite()
-    suite.addTest(TestSequenceFunctions("testCreateFolder"))
-    suite.addTest(TestSequenceFunctions("testDeleteFolder"))
+    suite.addTest(TestSequenceFunctions("test_shuffle"))
+    suite.addTest(TestSequenceFunctions("test_choice"))
     # 执行测试
     runner = unittest.TextTestRunner()
     runner.run(suite)
+
+if __name__ == '__main__':
+    print("")
+    test()
