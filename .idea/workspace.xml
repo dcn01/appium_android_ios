@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cadeade6-bb49-45fa-94e8-bc5fc9259610" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test10.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test11.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test12.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test3.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test4.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test5.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test6.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test7.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test8.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/case/test/process/test9.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/appium_app/platform/android/TAppClient.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCore/TLog.py" afterPath="$PROJECT_DIR$/ThinkCore/TLog.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/case/test/unittest/test4.py" afterPath="$PROJECT_DIR$/appium_app/case/test/unittest/test4.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/case/test/unittest/test5.py" afterPath="$PROJECT_DIR$/appium_app/case/test/unittest/test5.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/case/test/unittest/test7.py" afterPath="$PROJECT_DIR$/appium_app/case/test/unittest/test7.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/platform/android/TAdb.py" afterPath="$PROJECT_DIR$/appium_app/platform/android/TAdb.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/appium_app/platform/android/TAppium.py" afterPath="$PROJECT_DIR$/appium_app/platform/android/TAppiumServer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" afterPath="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py" afterPath="$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,8 +60,8 @@
       <file leaf-file-name="TAppiumDesktop.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="264" column="30" lean-forward="false" selection-start-line="264" selection-start-column="30" selection-end-line="264" selection-end-column="30" />
+            <state relative-caret-position="-3201">
+              <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -101,22 +81,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CaseObject.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CaseObject.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/appium_app/platform/android/CaseObject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="44" column="27" lean-forward="true" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="314">
+              <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wait.py" pinned="false" current-in-tab="true">
-        <entry file="file://D:/python36/Lib/site-packages/selenium/webdriver/support/wait.py">
+      <file leaf-file-name="TYaml.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCore/TYaml.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="57">
+              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+              <folding>
+                <marker date="1511791173480" expanded="true" signature="23:34" ph="import ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,7 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>to_addr</find>
       <find>server</find>
       <find>mail_host</find>
       <find>from_addr</find>
@@ -193,6 +176,7 @@
       <find>find_elements_by_id</find>
       <find>expected_conditions</find>
       <find>toast</find>
+      <find>self.adb</find>
       <find>find_element_by_class_name</find>
     </findStrings>
     <replaceStrings>
@@ -263,9 +247,9 @@
         <option value="$PROJECT_DIR$/appium_app/case/test/process/test6.py" />
         <option value="$PROJECT_DIR$/appium_app/platform/android/BaseOperate.py" />
         <option value="$PROJECT_DIR$/appium_app/platform/android/TAppiumServer.py" />
+        <option value="$PROJECT_DIR$/appium_app/platform/android/TAdb.py" />
         <option value="$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py" />
         <option value="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" />
-        <option value="$PROJECT_DIR$/appium_app/platform/android/TAdb.py" />
       </list>
     </option>
   </component>
@@ -303,42 +287,6 @@
             <path>
               <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="appium_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="appium_app" type="462c0819:PsiDirectoryNode" />
-              <item name="case" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="appium_app" type="462c0819:PsiDirectoryNode" />
-              <item name="case" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="appium_app" type="462c0819:PsiDirectoryNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="appium_app" type="462c0819:PsiDirectoryNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="ThinkCore" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -709,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511876257720</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="初始框架">
+      <created>1511964229602</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1511964229602</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -779,7 +734,8 @@
     <MESSAGE value="设备命令" />
     <MESSAGE value="导入Android 设备" />
     <MESSAGE value="框架优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="框架优化" />
+    <MESSAGE value="初始框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始框架" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1052,6 +1008,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
           <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,17 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCore/TYaml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="e#23#42#0" expanded="false" />
-            <marker date="1511791173480" expanded="true" signature="23:34" ph="import ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/python36/Lib/site-packages/xlsxwriter/workbook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-456">
@@ -1113,6 +1059,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,16 +1308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="264" column="30" lean-forward="false" selection-start-line="264" selection-start-column="30" selection-end-line="264" selection-end-column="30" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAdb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-646">
@@ -1395,19 +1332,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/CaseObject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="44" column="27" lean-forward="true" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/python36/Lib/site-packages/selenium/webdriver/support/wait.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCore/TYaml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding>
+            <marker date="1511791173480" expanded="true" signature="23:34" ph="import ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3201">
+          <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/CaseObject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

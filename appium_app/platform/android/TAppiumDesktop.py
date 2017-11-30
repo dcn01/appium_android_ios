@@ -53,18 +53,15 @@ class TAppiumDesktop(TAppiumServer):
     # desired_caps['wdaLocalPort'] = "8001"  #默认端口转发 8100
     def __init__(self, desiredCaps):
         self.dirver = webdriver.Remote('http://localhost:4723/wd/hub', desiredCaps)
-        self.adb = TAdb()
 
     def __init__(self, ip, desiredCaps):
         self.dirver = webdriver.Remote('http://' + ip + ':4723/wd/hub', desiredCaps)
-        self.adb = TAdb()
 
     def __init__(self, ip, port, desiredCaps):
         self.dirver = webdriver.Remote('http://' + ip + ':' + port + '/wd/hub', desiredCaps)
-        self.adb = TAdb()
 
     def __del__(self):
-        del self.adb;
+        pass
 
     # 查找元素--->find-->findtype:id/ids/xpath -->index
     def find(self, findType, findField, index=0):
@@ -262,13 +259,9 @@ class TAppiumDesktop(TAppiumServer):
         if (self.driver == None):
             return
         try:
-            if (self.adb.isSoftinputShown()):
-                self.driver.hide_keyboard()
+            self.driver.hide_keyboard()
         except Exception as e:
-            print(e)
-            self.driver.keyevent(4)  # 返回键
-        finally:
-            sleep(1.5)
+            pass
 
 
 #
