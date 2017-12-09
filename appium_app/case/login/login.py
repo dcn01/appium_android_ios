@@ -97,7 +97,7 @@ sleep(second)
 # 手机号码
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("phone_num"))
 # waitForElement(driver, "com.uc56.ucexpressbao:id/phone_num", 10)
-setValue(element, '18221851560')
+setValue(element, '18375547218')
 element = None
 # 网点编号
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("web_id"))
@@ -105,7 +105,7 @@ setValue(element, '02017')
 element = None
 # 员工编号
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("employee_id"))
-setValue(element, '00012800')
+setValue(element, 'CUA003')
 element = None
 # 员工密码
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("password"))
