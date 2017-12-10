@@ -127,6 +127,7 @@ if __name__ == '__main__':
         desiredCaps['platformName'] = 'Android'
         desiredCaps['platformVersion'] = phoneInfo['system-realease']  # '7.1.1'
         desiredCaps['deviceName'] = phoneInfo['device']  # 'Test26'
+        desiredCaps['app'] = r"D:\Project\Python_Project\TestFramework\file\app-sit2.8.2A2017-12-09-18.apk"
         desiredCaps['appPackage'] = 'com.uc56.ucexpressbao'
         desiredCaps['appActivity'] = '.activitys.SplashActivity'
         desiredCaps['resetKeyboard'] = True  # 将键盘给隐藏起来
@@ -137,7 +138,8 @@ if __name__ == '__main__':
         caseObject = CaseObjectAndroid(appiumDesktop,
                                        r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login.yaml")
         print(caseObject);
-        del appiumDesktop;
-        # del caseObject
     except Exception as ex:
         print(ex)
+    finally:
+        del appiumDesktop;
+        del caseObject;

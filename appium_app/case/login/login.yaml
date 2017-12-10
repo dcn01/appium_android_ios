@@ -8,12 +8,14 @@ steps:
       event: setValue
       params:
             value: 18375547218
+            clear: 20
       description: 帐号赋值：18375547218
     - element: password
       find: id
       event: setValue
       params:
             value: 111111111
+            clear: 18
       description: 密码赋值：111111111
     - element: login_button
       find: id

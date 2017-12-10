@@ -60,6 +60,7 @@ def hideSoftinput():
     finally:
         sleep(1.5)
 
+
 def setValue(element, value):
     if (element == None):
         return
@@ -82,12 +83,13 @@ desired_caps['platformName'] = 'Android'
 desired_caps['platformVersion'] = phoneInfo['system-realease']  # '7.1.1'
 desired_caps['deviceName'] = phoneInfo['device']  # 'Test26'
 # UC56
+desired_caps['app'] = r"D:\Project\Python_Project\TestFramework\file\app-sit2.8.2A2017-12-09-18.apk"
 desired_caps['appPackage'] = 'com.uc56.ucexpressbao'
 desired_caps['appActivity'] = '.activitys.SplashActivity'
 
 desired_caps['unicodeKeyboard'] = True  # 使用unicodeKeyboard的编码方式来发送字符串
 desired_caps['resetKeyboard'] = True  # 将键盘给隐藏起来
-desired_caps['noReset'] = True  #不重新安装
+desired_caps['noReset'] = True  # 不重新安装
 # desired_caps['udid'] = True  #应用app进程标识
 # desired_caps['wdaLocalPort'] = "8001"  #默认端口转发 8100
 
@@ -114,36 +116,36 @@ element = None
 # hideSoftinput()
 sleep(6)
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("save_password"))
-if element!=None:
+if element != None:
     element.click()
 
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("save_password"))
-if element!=None:
+if element != None:
     element.click()
 
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("login_button"))
-if element!=None:
+if element != None:
     element.click()
 sleep(second);
 
 # 忘记密码com.uc56.ucexpressbao:id/forget_password
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("forget_password"))
-if element!=None:
+if element != None:
     element.click()  # 是否重置密码
 
 # 忘记密码--》对话框  取消/确定按钮 com.uc56.ucexpressbao:id/btn_neg   com.uc56.ucexpressbao:id/btn_pos
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("btn_pos"))
-if element!=None:
+if element != None:
     element.click()  # 确定
 
 # 登陆界面--》注册按钮com.uc56.ucexpressbao:id/register
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("register"))
-if element!=None:
+if element != None:
     element.click()
 
 # 注册界面--》注册 com.uc56.ucexpressbao:id/register_device  返回 com.uc56.ucexpressbao:id/img_left
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("register_device"))
-if element!=None:
+if element != None:
     element.click()
 
 # driver.get_screenshot_as_png()
@@ -156,7 +158,7 @@ setValue(element, '111111111')
 element = None
 
 element = WebDriverWait(driver, 10).until(lambda x: x.find_element_by_id("login_button"))
-if element!=None:
+if element != None:
     element.click()
 sleep(second)
 driver.quit()

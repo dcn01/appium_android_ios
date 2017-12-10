@@ -123,8 +123,12 @@ class TAppiumDesktop(TAppiumServer):
             elif (eventType == event_setValue):  # 赋值 事件 value
                 if (params == None or 'value' not in params):
                     self.setValue("")
+                    return True
+                if ('clear' not in params):
+                    self.clearValue(element)
                 else:
-                    self.setValue(element, str(params['value']))
+                    self.clearValue(element, params["clear"])
+                self.setValue(element, str(params['value']))
             elif (eventType == event_getValue):
                 pass
             elif (eventType == event_message):
@@ -216,23 +220,27 @@ class TAppiumDesktop(TAppiumServer):
         #     self.getDirver().swipe(540, 800, 540, 560, 0)
         #     time.sleep(2)
 
-    def clearValue(self, element):
+    def clearValue(self, element, clearNum=0):
         if (element == None):
             return
         element.send_keys("")
+        strLen = len(self.getValue(element));
+        if (strLen > clearNum):
+            clearNum = strLen;
+        if (clearNum == 0):
+            return
         self.getDirver().press_keycode(123)  # 光标移动到输入框最右边
-        for n in range(1, 10):
+        for n in range(0, clearNum):
             self.getDirver().keyevent(67)  # 删除
 
     def setValue(self, element, value):
-        try:
+        try:  # 数据一样者不赋值
             if (self.getValue(element) == value):
                 return
             elif (self.getWebValue(element) == value):
                 return
         except Exception:
             pass
-        self.clearValue(element)
         element.send_keys(value)
 
     def getValue(self, element):
