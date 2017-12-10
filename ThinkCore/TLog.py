@@ -15,14 +15,13 @@ PATH = lambda p: os.path.abspath(
 # 日志
 class TLog:
     def __init__(self, pathDir, fileName):
-        global logger, logPath, logName
-        logPath = os.path.join(pathDir, "")
-        logName = fileName
-        if not os.path.exists(logPath):
-            os.makedirs(logPath)
+        self.logPath = os.path.join(pathDir, "")
+        self.logName = fileName
+        if not os.path.exists(self.logPath):
+            os.makedirs(self.logPath)
         self.checkNo = 0
         self.logger = logging.getLogger()
-        fh = logging.FileHandler(os.path.join(logPath, fileName + ".log"))
+        fh = logging.FileHandler(os.path.join(self.logPath, fileName + ".log"))
         formatter = logging.Formatter('%(asctime)s  - %(levelname)s - %(message)s')
         fh.setFormatter(formatter)
         self.logger.addHandler(fh)

@@ -5,6 +5,7 @@ from ThinkCore.TFile import *
 from ThinkCore.TYaml import *
 from ThinkCore.TLog import *
 from ThinkCore.TExcel import *
+from ThinkCore.TEmail import *
 from appium_app.platform.android.TAppiumDesktop import *
 from appium_app.platform.android.TAapt import *
 from selenium.webdriver.common.by import By
@@ -183,6 +184,9 @@ class CaseObjectAndroid(CaseObject):
         del self.appiumDesktop
         del self.logger
 
+    def getLogName(self):
+        self.logger.getFileName()
+
 
 # ios 测试用例
 class CaseObjectIos(CaseObject):
@@ -215,8 +219,8 @@ if __name__ == '__main__':
             r"D:\Project\Python_Project\TestFramework\file\login\\" + str(time.strftime('%Y%m%d%H%M%S', startTime)));
 
         # 开始
-        caseObject = CaseObjectAndroid(
-            r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login.yaml", loginCaseOutPath, desiredCaps)
+        caseObject = CaseObjectAndroid(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login.yaml",
+                                       loginCaseOutPath, desiredCaps)
         # 结束
 
         endDate = datetime.datetime.now()
@@ -237,8 +241,7 @@ if __name__ == '__main__':
 
         apk = TAapk(r"D:\Project\Python_Project\TestFramework\file\app-sit2.8.2A2017-12-09-18.apk")
         sum = {'testSumDate': str((endDate - startDate).seconds) + '秒', 'sum': caseNum, 'pass': casePass,
-               'testDate': str(
-                   time.strftime('%Y%m%d%H%M%S', startTime)),
+               'testDate': str(time.strftime('%Y-%m-%d-%H-%M-%S', startTime)),
                'fail': caseFail,
                'appVersion': apk.getApkVersionName(), 'appSize': apk.getApkSize(), 'appName': apk.getApkName()}
         excel.initStatisticsData(sum)
@@ -246,14 +249,18 @@ if __name__ == '__main__':
         caseInfo = caseObject.getCaseInfo()
         checkPointInfo = caseObject.getCheckPointInfo()
         info = {"phoneClass": phoneInfo["brand"], "id": caseInfo["id"], "caseName": caseInfo["name"],
-                "caseDescription": caseInfo["description"], "caseFunction": "",
-                "precondition": "", "step": str(caseObject.getStepsInfos()), "checkpoint": str(checkPointInfo),
-                "result": caseObject.getCheckPointString(), "remarks": "",
-                "screenshot": ""}
+                "caseDescription": str(caseInfo["description"]), "caseFunction": "无",
+                "precondition": "无", "step": str(caseObject.getStepsInfos()), "checkpoint": str(checkPointInfo),
+                "result": str(caseObject.getCheckPointString()), "remarks": "日志名:" + str(caseObject.getLogName()),
+                "screenshot": "无"}
         excel.initDetailData(info)
-        print(caseObject);
+        del excel
+        email = TEmail(r"D:\Project\Python_Project\TestFramework\file\email.ini")
+        email.sendMail(excelOutFilePath)
     except Exception as ex:
         print(ex)
     finally:
-        del caseObject;
-        del excel
+        if (caseObject != None):
+            del caseObject
+        if (excel != None):
+            del excel
