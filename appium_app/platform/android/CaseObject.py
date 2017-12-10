@@ -144,7 +144,8 @@ class CaseObject:
         if (("element" not in checkpoint) or ("find" not in checkpoint) or ("event" not in checkpoint)):
             raise Exception("案例检测点参数不全！");
         self.logger.info("案例检测点信息:" + str(checkpoint))
-        self.checkPointInfo = checkpoint
+        if ("description" in checkpoint):
+            self.checkPointInfo = checkpoint["description"]
         item = None;
         if (checkpoint["find"] == "ids" or checkpoint["find"] == "xpaths"):
             item = self.appiumDesktop.find(checkpoint["find"], checkpoint["element"], checkpoint["index"])
@@ -170,7 +171,6 @@ class CaseObject:
 class CaseObjectAndroid(CaseObject):
     def __init__(self, yamlPath, dirPath, desiredCaps, ip="localhost", port="4723"):
         self.logger = TLog(dirPath, "" + time.strftime('%Y%m%d%H%M%S', time.localtime()))
-
         try:
             self.logger.info(u"开始初始化appium client ip:" + ip + " port:" + port)
             self.appiumDesktop = TAppiumDesktop(desiredCaps, ip, port);  # 设备连接属性
@@ -185,7 +185,7 @@ class CaseObjectAndroid(CaseObject):
         del self.logger
 
     def getLogName(self):
-        self.logger.getFileName()
+        return self.logger.getFileName()
 
 
 # ios 测试用例
