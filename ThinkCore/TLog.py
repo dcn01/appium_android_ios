@@ -15,8 +15,8 @@ PATH = lambda p: os.path.abspath(
 # 日志
 class TLog:
     def __init__(self, pathDir, fileName):
-        global logger, logPath,logName
-        logPath = os.path.join(pathDir, fileName)
+        global logger, logPath, logName
+        logPath = os.path.join(pathDir, "")
         logName = fileName
         if not os.path.exists(logPath):
             os.makedirs(logPath)
@@ -45,26 +45,15 @@ class TLog:
     def error(self, result):
         self.logger.error(result)
 
-# if __name__ == "__main__":
-#     logger = TLog(PATH(u"D:/Project/Python_Project/TestFramework/file"),
-#                   "" + time.strftime('%Y%m%d%H%M%S', time.localtime()))
-#     logger.info("sfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfg" + time.strftime('%Y%m%d%H%M%S', time.localtime()))
-#     logger.error("          error" + time.strftime('%Y%m%d%H%M%S', time.localtime()))
-#     del logger
-    # adb = TAdb()
-    # devicess = adb.getAttachedDevices()
-    # if len(devicess) > 0:
-    #     l_devices = []
-    #     for devices in devicess:
-    #         phoneInfo = TAdb().getPhoneInfo(devices)
-    #         phoneName = "android" + "_" + phoneInfo["brand"] + "_" + phoneInfo["model"] + "_" + phoneInfo[
-    #             "system-realease"] + "_" + time.strftime('%Y%m%d%H%M%S', time.localtime())
-    #         logger = TLog(PATH("../../../file"), "test2017-11-27")
-    #         logger.info("sfsfsfsdfsdfsdfsdfgdfgdfg")
-    #         # logger.info("log:" + adb.getBugReport())
-    #         # logger.error("error2017-11-27")
-    #         # logger.error("error")
-    #         del logger
-    # else:
-    #     print("没有可用的安卓设备")
-    # del adb
+if __name__ == "__main__":
+    logger = TLog(PATH(u"D:/Project/Python_Project/TestFramework/file"),
+                  "" + time.strftime('%Y%m%d%H%M%S', time.localtime()))
+    logger.info(
+        "sfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfg" + time.strftime(
+            '%Y%m%d%H%M%S', time.localtime()))
+    logger.error("          error" + time.strftime('%Y%m%d%H%M%S', time.localtime()))
+    logger.info(
+        "sfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfgsfsdfsdfsdgdfgdfgdfghfghfg" + time.strftime(
+            '%Y%m%d%H%M%S', time.localtime()))
+    logger.error("          error" + time.strftime('%Y%m%d%H%M%S', time.localtime()))
+    del logger

@@ -105,8 +105,11 @@ class TAdb(object):
         # 安装apk  option( -r ) 加 -r 参数，保留已设定数据，重新安装
 
     def isSoftinputShown(self):
-        result = self.sendCommand("shell dumpsys input_method ")
-        if result.find("mInputShown=true") >= 1 | result.find("mWindowVisible=true") >= 1:
+        result = self.sendCommand("shell dumpsys input_method \"| grep mInputShown\" ")
+        if result.find("mInputShown=true") >= 1:
+            return True;
+        result = self.sendCommand("shell dumpsys input_method \"| grep mWindowVisible\" ")  # |grep mWindowVisible"
+        if result.find("mWindowVisible=true") >= 1:
             return True;
         return False;
 

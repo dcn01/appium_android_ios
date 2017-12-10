@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cadeade6-bb49-45fa-94e8-bc5fc9259610" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/app-sit2.8.2A2017-12-09-18.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/android-system-webview-60.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/appium-uiautomator2-server-debug-androidTest.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/appium-uiautomator2-server-v0.1.9.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCore/TExcel.py" afterPath="$PROJECT_DIR$/ThinkCore/TExcel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/case/login/login.py" afterPath="$PROJECT_DIR$/appium_app/case/login/login.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCore/TLog.py" afterPath="$PROJECT_DIR$/ThinkCore/TLog.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/case/login/login.yaml" afterPath="$PROJECT_DIR$/appium_app/case/login/login.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" afterPath="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/platform/android/TAapt.py" afterPath="$PROJECT_DIR$/appium_app/platform/android/TAapt.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/platform/android/TAdb.py" afterPath="$PROJECT_DIR$/appium_app/platform/android/TAdb.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py" afterPath="$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,10 +36,10 @@
     <SUITE FILE_PATH="coverage/TestFramework$TAppium.coverage" NAME="TAppium Coverage Results" MODIFIED="1510576949111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/TestFramework$TAppiumDesktop.coverage" NAME="TAppiumDesktop Coverage Results" MODIFIED="1512825608736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_app/platform/android" />
     <SUITE FILE_PATH="coverage/TestFramework$login__1_.coverage" NAME="login (1) Coverage Results" MODIFIED="1511610602716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_app/case/login" />
-    <SUITE FILE_PATH="coverage/TestFramework$CaseObject.coverage" NAME="CaseObject Coverage Results" MODIFIED="1512892167186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_app/platform/android" />
-    <SUITE FILE_PATH="coverage/TestFramework$TAapt.coverage" NAME="TAapt Coverage Results" MODIFIED="1510464997792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium/platform/android" />
+    <SUITE FILE_PATH="coverage/TestFramework$CaseObject.coverage" NAME="CaseObject Coverage Results" MODIFIED="1512909356724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_app/platform/android" />
+    <SUITE FILE_PATH="coverage/TestFramework$TAapt.coverage" NAME="TAapt Coverage Results" MODIFIED="1512907282145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_app/platform/android" />
     <SUITE FILE_PATH="coverage/TestFramework$TExcel.coverage" NAME="TExcel Coverage Results" MODIFIED="1512894477391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ThinkCore" />
-    <SUITE FILE_PATH="coverage/TestFramework$TLog.coverage" NAME="TLog Coverage Results" MODIFIED="1511775605292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_app/platform/android" />
+    <SUITE FILE_PATH="coverage/TestFramework$TLog.coverage" NAME="TLog Coverage Results" MODIFIED="1512900237646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ThinkCore" />
     <SUITE FILE_PATH="coverage/TestFramework$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1511957969791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_app/case/test/process" />
     <SUITE FILE_PATH="coverage/TestFramework$test7__1_.coverage" NAME="test7 (1) Coverage Results" MODIFIED="1511954502826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appium_app/case/test/unittest" />
     <SUITE FILE_PATH="coverage/TestFramework$TLog__1_.coverage" NAME="TLog (1) Coverage Results" MODIFIED="1511788162798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ThinkCore" />
@@ -56,21 +60,19 @@
       <file leaf-file-name="TAppiumDesktop.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="287" column="28" lean-forward="true" selection-start-line="287" selection-start-column="28" selection-end-line="287" selection-end-column="28" />
+            <state relative-caret-position="305">
+              <caret line="255" column="25" lean-forward="true" selection-start-line="255" selection-start-column="25" selection-end-line="255" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TYaml.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkCore/TYaml.py">
+      <file leaf-file-name="TAdb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAdb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <marker date="1511791173480" expanded="true" signature="23:34" ph="import ..." />
-              </folding>
+            <state relative-caret-position="77">
+              <caret line="171" column="8" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="80" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,8 +80,8 @@
       <file leaf-file-name="CaseObject.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appium_app/platform/android/CaseObject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1157">
-              <caret line="74" column="46" lean-forward="false" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="46" />
+            <state relative-caret-position="191">
+              <caret line="116" column="20" lean-forward="true" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -87,71 +89,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devices.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/devices.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="email.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/email.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TExcel.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ThinkCore/TExcel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="201" column="34" lean-forward="true" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/python36/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="137">
               <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.yaml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TString.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCore/TString.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TFile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCore/TFile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/appium_app/case/login/login.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestRun.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appium_app/case/test/TestRun.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="33" column="52" lean-forward="true" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appium_app/case/login/login.py">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="100" />
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TExcel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCore/TExcel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="252" column="0" lean-forward="false" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,16 +150,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>element.send_keys('')</find>
-      <find>hide_keyboard</find>
-      <find>sleep</find>
-      <find>save_password</find>
-      <find>common.</find>
-      <find>Txt</find>
-      <find>hasKey</find>
-      <find>has</find>
-      <find>get_format</find>
-      <find>addFormatForCenter</find>
       <find>elif</find>
       <find>caseFunction</find>
       <find>caseDescription</find>
@@ -198,6 +170,16 @@
       <find>WebDriverWait</find>
       <find>testSumDate</find>
       <find>item</find>
+      <find>stepsInfos</find>
+      <find>stepsInfo</find>
+      <find>stepsStatus</find>
+      <find>logger</find>
+      <find>description</find>
+      <find>TAdb</find>
+      <find>hide</find>
+      <find>event_exist</find>
+      <find>TAppiumDesktop</find>
+      <find>self.tyaml</find>
     </findStrings>
     <replaceStrings>
       <replace>FileUtil</replace>
@@ -222,20 +204,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/common/TYaml.py" />
-        <option value="$PROJECT_DIR$/common/Test.py" />
-        <option value="$PROJECT_DIR$/appium/other/TAppiumServer1.py" />
-        <option value="$PROJECT_DIR$/appium/other/TAppium1.py" />
-        <option value="$PROJECT_DIR$/common/BaseAppiumServerbak.py" />
-        <option value="$PROJECT_DIR$/common/TAppium.py" />
-        <option value="$PROJECT_DIR$/appium/case/login/login.py" />
-        <option value="$PROJECT_DIR$/common/TestRun.py" />
         <option value="$PROJECT_DIR$/common/Test2.py" />
         <option value="$PROJECT_DIR$/common/TString.py" />
         <option value="$PROJECT_DIR$/common/TEmail.py" />
         <option value="$PROJECT_DIR$/common/TExcel.py" />
         <option value="$PROJECT_DIR$/appium_app/platform/android/TLog.py" />
-        <option value="$PROJECT_DIR$/ThinkCore/TLog.py" />
         <option value="$PROJECT_DIR$/ThinkCore/TFile.py" />
         <option value="$PROJECT_DIR$/ThinkCore/TEmail.py" />
         <option value="$PROJECT_DIR$/ThinkCore/TYaml.py" />
@@ -266,13 +239,22 @@
         <option value="$PROJECT_DIR$/appium_app/case/test/process/test6.py" />
         <option value="$PROJECT_DIR$/appium_app/platform/android/BaseOperate.py" />
         <option value="$PROJECT_DIR$/appium_app/platform/android/TAppiumServer.py" />
-        <option value="$PROJECT_DIR$/appium_app/platform/android/TAdb.py" />
         <option value="$PROJECT_DIR$/file/test.yaml" />
+        <option value="$PROJECT_DIR$/appium_app/case/login/login.py" />
+        <option value="$PROJECT_DIR$/ThinkCore/TExcel.py" />
+        <option value="$PROJECT_DIR$/file/login/20171210175656/20171210175656.log" />
+        <option value="$PROJECT_DIR$/ThinkCore/TLog.py" />
+        <option value="$PROJECT_DIR$/file/login/20171210180643.log" />
+        <option value="$PROJECT_DIR$/file/login/20171210181204/20171210181204.log" />
+        <option value="$PROJECT_DIR$/appium_app/platform/android/TAdb.py" />
+        <option value="$PROJECT_DIR$/file/login/20171210184201/20171210184201.log" />
+        <option value="$PROJECT_DIR$/file/login/20171210191958/20171210191958.log" />
+        <option value="$PROJECT_DIR$/file/login/20171210192722/20171210192722.log" />
+        <option value="$PROJECT_DIR$/appium_app/platform/android/TAapt.py" />
+        <option value="$PROJECT_DIR$/file/login/20171210202311/20171210202316.log" />
+        <option value="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" />
         <option value="$PROJECT_DIR$/appium_app/case/login/login.yaml" />
         <option value="$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py" />
-        <option value="$PROJECT_DIR$/appium_app/case/login/login.py" />
-        <option value="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" />
-        <option value="$PROJECT_DIR$/ThinkCore/TExcel.py" />
       </list>
     </option>
   </component>
@@ -304,6 +286,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -333,13 +317,6 @@
               <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
               <item name="appium_app" type="462c0819:PsiDirectoryNode" />
-              <item name="case" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="appium_app" type="462c0819:PsiDirectoryNode" />
               <item name="platform" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -352,14 +329,20 @@
             <path>
               <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="appium_app" type="462c0819:PsiDirectoryNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
               <item name="file" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="20171210203557" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
@@ -370,8 +353,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,19 +361,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Project\Python_Project\TestFramework\file" />
-      <recent name="D:\Project\Python_Project\TestFramework\appium_app\case\login" />
-      <recent name="D:\Project\Python_Project\TestFramework\appium_app\platform\android" />
-      <recent name="D:\Project\Python_Project\TestFramework\appium_app\case\test\process" />
-      <recent name="D:\Project\Python_Project\TestFramework\appium_app\case\test" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project\Python_Project\TestFramework\appium_app\case\test\unittest" />
       <recent name="D:\Project\Python_Project\TestFramework\appium_app\case\test" />
       <recent name="D:\Project\Python_Project\TestFramework\file" />
       <recent name="D:\Project\Python_Project\TestFramework\ThinkCore" />
       <recent name="D:\Project\Python_Project\TestFramework\appium_app\platform\android" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\Python_Project\TestFramework\file" />
+      <recent name="D:\Project\Python_Project\TestFramework\appium_app\case\login" />
+      <recent name="D:\Project\Python_Project\TestFramework\appium_app\platform\android" />
+      <recent name="D:\Project\Python_Project\TestFramework\appium_app\case\test\process" />
+      <recent name="D:\Project\Python_Project\TestFramework\appium_app\case\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -407,7 +388,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TExcel">
+  <component name="RunManager" selected="Python.CaseObject">
     <configuration name="CaseObject" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -422,6 +403,24 @@
       <module name="TestFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="TAapt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/appium_app/platform/android" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TestFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/appium_app/platform/android/TAapt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -458,6 +457,24 @@
       <module name="TestFramework" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ThinkCore/TExcel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="TLog" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ThinkCore" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TestFramework" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ThinkCore/TLog.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -650,56 +667,20 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/appium_app/case/test/process" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TestFramework" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/appium_app/case/test/process/test3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="test4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/appium_app/case/test/process" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TestFramework" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/appium_app/case/test/process/test4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.test3" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test4" />
-      <item index="2" class="java.lang.String" itemvalue="Python.CaseObject" />
-      <item index="3" class="java.lang.String" itemvalue="Python.TAppiumDesktop" />
-      <item index="4" class="java.lang.String" itemvalue="Python.TExcel" />
+      <item index="0" class="java.lang.String" itemvalue="Python.CaseObject" />
+      <item index="1" class="java.lang.String" itemvalue="Python.TAppiumDesktop" />
+      <item index="2" class="java.lang.String" itemvalue="Python.TExcel" />
+      <item index="3" class="java.lang.String" itemvalue="Python.TLog" />
+      <item index="4" class="java.lang.String" itemvalue="Python.TAapt" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.TExcel" />
-        <item index="1" class="java.lang.String" itemvalue="Python.CaseObject" />
-        <item index="2" class="java.lang.String" itemvalue="Python.TAppiumDesktop" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test4" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test3" />
+        <item index="0" class="java.lang.String" itemvalue="Python.CaseObject" />
+        <item index="1" class="java.lang.String" itemvalue="Python.TAapt" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TLog" />
+        <item index="3" class="java.lang.String" itemvalue="Python.TExcel" />
+        <item index="4" class="java.lang.String" itemvalue="Python.TAppiumDesktop" />
       </list>
     </recent_temporary>
   </component>
@@ -763,7 +744,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512828153011</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="初始框架">
+      <created>1512894556541</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1512894556541</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -801,17 +789,17 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2377892" sideWeight="0.7891566" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24100257" sideWeight="0.7891566" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22506739" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28032345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21786633" sideWeight="0.21084337" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21024258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15633424" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1055,19 +1043,24 @@
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ThinkCore/TLog.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py</url>
+          <line>151</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/appium_app/platform/android/CaseObject.py</url>
-          <line>141</line>
-          <option name="timeStamp" value="202" />
+          <line>69</line>
+          <option name="timeStamp" value="267" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py</url>
-          <line>77</line>
-          <option name="timeStamp" value="218" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py</url>
-          <line>123</line>
-          <option name="timeStamp" value="244" />
+          <url>file://$PROJECT_DIR$/appium_app/platform/android/TAapt.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="272" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1077,84 +1070,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="249" />
+      <option name="time" value="281" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/file/20171127210852/20171127210852.log" />
-    <entry file="file://$PROJECT_DIR$/file/20171127210922/20171127210922.log" />
-    <entry file="file://$PROJECT_DIR$/ThinkCore/TLog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="2" selection-end-line="52" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCore/TEmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="999">
-          <caret line="70" column="61" lean-forward="true" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCore/TEmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="92" column="11" lean-forward="false" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCore/TString.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python36/Lib/site-packages/xlsxwriter/workbook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCore/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python36/Lib/site-packages/appium/webdriver/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python36/Lib/unittest/loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python36/Lib/unittest/suite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3021">
-          <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python36/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appium_app/case/test/unittest/test6.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -1291,26 +1211,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAdb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="187" column="25" lean-forward="false" selection-start-line="187" selection-start-column="25" selection-end-line="187" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/file/test.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAapt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="86" column="12" lean-forward="false" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1325,29 +1229,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCore/TFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAppiumServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="e#24#33#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appium_app/case/login/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1355,7 +1240,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,42 +1266,8 @@
     <entry file="file://$PROJECT_DIR$/appium_app/case/test/TestRun.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="33" column="52" lean-forward="true" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+          <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/login/login.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/login/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="287" column="28" lean-forward="true" selection-start-line="287" selection-start-column="28" selection-end-line="287" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/CaseObject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1157">
-          <caret line="74" column="46" lean-forward="false" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1437,18 +1287,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/file/20171210163048/20171210163048.log" />
+    <entry file="file://$PROJECT_DIR$/file/login/20171210175656/20171210175656.log" />
+    <entry file="file://$PROJECT_DIR$/file/20171210180400.log" />
+    <entry file="file://$PROJECT_DIR$/ThinkCore/TLog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/login/20171210180643.log" />
+    <entry file="file://$PROJECT_DIR$/appium_app/case/login/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAppiumServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/login/20171210184201/20171210184201.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/login/20171210181204/20171210181204.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/login/20171210191958/20171210191958.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="74" lean-forward="false" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/login/20171210192722/20171210192722.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCore/TFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCore/TString.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/python36/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="137">
           <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/login/20171210200814/20171210200814.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/login/20171210202311/20171210202316.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAapt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <element signature="e#16#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="171" column="8" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkCore/TExcel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="201" column="34" lean-forward="true" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
+        <state relative-caret-position="364">
+          <caret line="252" column="0" lean-forward="false" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/CaseObject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="116" column="20" lean-forward="true" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="255" column="25" lean-forward="true" selection-start-line="255" selection-start-column="25" selection-end-line="255" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/case/login/login.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>

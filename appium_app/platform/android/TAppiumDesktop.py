@@ -34,7 +34,10 @@ event_keyevent = "keyevent"
 event_sleep = "sleep"
 event_toWebview = "toWebview"
 event_toNative = "toNative"
-timeout = 10
+event_equal = "equal"
+event_exist = "exist"
+event_back = "back"
+timeout = 30
 
 
 def waitForElement(driver, idString):
@@ -124,9 +127,7 @@ class TAppiumDesktop(TAppiumServer):
                 if (params == None or 'value' not in params):
                     self.setValue("")
                     return True
-                if ('clear' not in params):
-                    self.clearValue(element)
-                else:
+                if ('clear' in params):
                     self.clearValue(element, params["clear"])
                 self.setValue(element, str(params['value']))
             elif (eventType == event_getValue):
@@ -147,6 +148,19 @@ class TAppiumDesktop(TAppiumServer):
                 self.toWebview()
             elif (eventType == event_toNative):  # 切换--> native
                 self.getDirver().switch_to.context("NATIVE_APP")
+            elif (eventType == event_equal):  # 是否相等
+                if (params == None or 'value' not in params):
+                    return False
+                if (self.getValue(element) == str(params['value'])):
+                    return True
+                return False
+            elif (eventType == event_exist):  # 是否存在
+                if (element != None):
+                    return True
+                return False
+            elif (eventType == event_back):  # 回退
+                self.getDirver().press_keycode(params['code'])
+                return False
             pass
         except Exception as e:
             print(e)
@@ -241,7 +255,9 @@ class TAppiumDesktop(TAppiumServer):
                 return
         except Exception:
             pass
+        self.clearText(value)
         element.send_keys(value)
+        self.hideSoftinput()
 
     def getValue(self, element):
         result = element.get_attribute("text")
@@ -288,12 +304,16 @@ class TAppiumDesktop(TAppiumServer):
     def hideSoftinput(self):
         if (self.getDirver() == None):
             return
+
+        adb = TAdb()
         try:
-            self.getDirver().hide_keyboard()
+            if (adb.isSoftinputShown()):
+                self.getDirver().hide_keyboard()
         except Exception as e:
-            pass
+            print(e)
+            self.getDirver().press_keycode(4)  # KEYCODE_BACK 返回键
+        del adb  #
 
 
-#
 if __name__ == "__main__":
     pass

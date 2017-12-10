@@ -1,16 +1,17 @@
-#coding=utf-8
+# coding=utf-8
 
 import os
 import re
 import subprocess
 from math import floor
+import sys
 
-import common.TFile as File
-import common.TString as String
+from ThinkCore.TFile import *
 
 '''
 aapt 工具 读取apk文件的信息
 '''
+
 
 class TAapk():
     def __init__(self, apkPath):
@@ -18,8 +19,11 @@ class TAapk():
         self.fileException()
 
     def fileException(self):
-        if File(self.apkPath, "r").existFile() == False:
+        file = TFile(self.apkPath, "r")
+        if file.existFile() == False:
+            del file
             raise Exception('file not exists')
+        del file
 
     # 得到app的文件大小
     def getApkSize(self):
@@ -29,7 +33,7 @@ class TAapk():
 
     def getApkInfo(self):
         self.fileException()
-        String.encodeUtf8()
+        # sys.setdefaultencoding('utf-8')
         p = subprocess.Popen("aapt dump badging %s" % self.apkPath, stdout=subprocess.PIPE,
                              stderr=subprocess.PIPE,
                              stdin=subprocess.PIPE, shell=True)
@@ -47,10 +51,19 @@ class TAapk():
         print('versionName:' + versionName)
         return packagename, versionName, versionCode
 
+    def getApkPackageName(self):
+        return self.getApkInfo()[0]
+
+    def getApkVersionName(self):
+        return self.getApkInfo()[1]
+
+    def getApkVersionCode(self):
+        return self.getApkInfo()[2]
+
     # 得到应用名字
     def getApkName(self):
         self.fileException()
-        String.encodeUtf8()
+        # sys.setdefaultencoding('utf-8')
         p = subprocess.Popen("aapt dump badging %s" % self.apkPath, stdout=subprocess.PIPE,
                              stderr=subprocess.PIPE,
                              stdin=subprocess.PIPE, shell=True)
@@ -66,7 +79,7 @@ class TAapk():
     # 得到启动类
     def getApkActivity(self):
         self.fileException()
-        String.encodeUtf8()
+        # sys.setdefaultencoding('utf-8')
         p = subprocess.Popen("aapt dump badging %s" % self.apkPath, stdout=subprocess.PIPE,
                              stderr=subprocess.PIPE,
                              stdin=subprocess.PIPE, shell=True)
@@ -76,13 +89,14 @@ class TAapk():
             return match.group(1)
         return ""
 
-# if __name__ == '__main__':
-#     try:
-#         apk = TAapk(r"D:\Project\Python_Project\TestFramework\file\app-release2.5.2017.0831001A.apk")
-#         apk.getApkInfo()
-#         print(apk.getApkName())
-#         print(apk.getApkSize())
-#         print(apk.getApkActivity())
-#
-#     except IOError:
-#         print ("file not exsit")
+
+if __name__ == '__main__':
+    try:
+        apk = TAapk(r"D:\Project\Python_Project\TestFramework\file\app-sit2.8.2A2017-12-09-18.apk")
+        apk.getApkInfo()
+        print(apk.getApkName())
+        print(apk.getApkSize())
+        print(apk.getApkActivity())
+
+    except IOError:
+        print("file not exsit")
