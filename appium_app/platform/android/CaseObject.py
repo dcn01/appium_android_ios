@@ -212,7 +212,9 @@ class CaseObjectIos(CaseObject):
 
 
 if __name__ == '__main__':
-
+    excel = None
+    caseObject = None
+    print("开始执行脚本")
     try:
         devices = TAdb().getAttachedDevices()
         if (len(devices) <= 0):
@@ -233,15 +235,16 @@ if __name__ == '__main__':
         # appiumDesktop = TAppiumDesktop(desiredCaps);  # 设备连接属性
         startTime = time.localtime()
         startDate = datetime.datetime.now()
-        loginCaseOutPath = (r"D:\Project\Python_Project\TestFramework\file\login\\" + str(time.strftime('%Y%m%d%H%M%S', startTime)));
+        loginCaseOutPath = (
+        r"D:\Project\Python_Project\TestFramework\file\login\\" + str(time.strftime('%Y%m%d%H%M%S', startTime)));
 
+        print("启动真机或模拟器")
         # 开始
         caseObject = CaseObjectAndroid(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login.yaml",
                                        loginCaseOutPath, desiredCaps)
         # 结束
-
         endDate = datetime.datetime.now()
-
+        print("执行完毕,正在统计数据")
         excelOutFilePath = loginCaseOutPath + '\\report.xlsx'
         excel = TExcel(excelOutFilePath, u"测试总况", u"测试详情")
 
@@ -272,8 +275,10 @@ if __name__ == '__main__':
                 "screenshot": "无"}
         excel.initDetailData(info)
         del excel
+        print("统计数据完毕,正在发送邮箱…")
         email = TEmail(r"D:\Project\Python_Project\TestFramework\file\email.ini")
         email.sendMail(excelOutFilePath)
+        print("发送邮箱完毕")
     except Exception as ex:
         print(ex)
     finally:
