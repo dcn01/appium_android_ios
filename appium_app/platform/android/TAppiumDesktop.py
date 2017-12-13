@@ -13,6 +13,13 @@ from appium_app.platform.android.TAppiumServer import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 
+import sys
+import os
+
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+
 find_id = "id"
 find_ids = "ids"
 find_xpath = "xpath"
@@ -74,11 +81,13 @@ class TAppiumDesktop(TAppiumServer):
     #
     # def __init__(self, ip, desiredCaps):
     #     self.dirver = webdriver.Remote('http://' + ip + ':4723/wd/hub', desiredCaps)
+    dirver = None
     def __init__(self, desiredCaps, ip="localhost", port="4723"):
         self.dirver = webdriver.Remote('http://' + ip + ':' + port + '/wd/hub', desiredCaps)
 
     def __del__(self):
-        self.dirver.quit()
+        if (self.dirver != None):
+            self.dirver.quit()
         self.dirver = None
 
     def getDirver(self):

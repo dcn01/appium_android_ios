@@ -24,6 +24,15 @@ import time
 
 
 class CaseObject:
+    caseInfo = None
+    stepsInfos = []  # 每步执行状态
+    checkPointInfo = None  # 检测点数据
+    checkPointStatus = False  # 默认检测点--》不通过
+    logger = None
+    file = None
+    tyaml = None
+    yaml = None
+
     # yaml
     # 执行步骤超时配置
     # 文件操作
@@ -34,6 +43,7 @@ class CaseObject:
         self.stepsInfos = []  # 每步执行状态
         self.checkPointInfo = None  # 检测点数据
         self.checkPointStatus = False  # 默认检测点--》不通过
+        self.logger = logger
         self.logger = logger
 
         self.appiumDesktop = appiumDesktop;
@@ -72,9 +82,12 @@ class CaseObject:
             return
 
     def __del__(self):
-        del self.file;
-        del self.yaml;
-        del self.tyaml;
+        if (self.file != None):
+            del self.file;
+        if (self.yaml != None):
+            del self.yaml;
+        if (self.tyaml != None):
+            del self.tyaml;
 
     def getCaseInfo(self):  # 案例信息
         return self.caseInfo
@@ -169,6 +182,9 @@ class CaseObject:
 
 # android 测试用例
 class CaseObjectAndroid(CaseObject):
+    logger = None
+    appiumDesktop = None
+
     def __init__(self, yamlPath, dirPath, desiredCaps, ip="localhost", port="4723"):
         self.logger = TLog(dirPath, "" + time.strftime('%Y%m%d%H%M%S', time.localtime()))
         try:
@@ -181,8 +197,10 @@ class CaseObjectAndroid(CaseObject):
 
     def __del__(self):
         super().__del__()
-        del self.appiumDesktop
-        del self.logger
+        if (self.appiumDesktop != None):
+            del self.appiumDesktop
+        if (self.logger != None):
+            del self.logger
 
     def getLogName(self):
         return self.logger.getFileName()
@@ -208,15 +226,14 @@ if __name__ == '__main__':
         desiredCaps['app'] = r"D:\Project\Python_Project\TestFramework\file\app-sit2.8.2A2017-12-09-18.apk"
         desiredCaps['appPackage'] = 'com.uc56.ucexpressbao'
         desiredCaps['appActivity'] = '.activitys.SplashActivity'
-        desiredCaps['resetKeyboard'] = True  # 将键盘给隐藏起来
+        desiredCaps['resetKeyboard'] = True  # 将键盘给隐藏起来9
         desiredCaps['noReset'] = True  # 不重新安装
         desiredCaps['udid'] = devices[0]  # 应用app进程标识
         # desiredCaps['wdaLocalPort'] = "8001"  # 默认端口转发 8100
         # appiumDesktop = TAppiumDesktop(desiredCaps);  # 设备连接属性
         startTime = time.localtime()
         startDate = datetime.datetime.now()
-        loginCaseOutPath = (
-            r"D:\Project\Python_Project\TestFramework\file\login\\" + str(time.strftime('%Y%m%d%H%M%S', startTime)));
+        loginCaseOutPath = (r"D:\Project\Python_Project\TestFramework\file\login\\" + str(time.strftime('%Y%m%d%H%M%S', startTime)));
 
         # 开始
         caseObject = CaseObjectAndroid(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login.yaml",
