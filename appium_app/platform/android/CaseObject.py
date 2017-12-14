@@ -215,8 +215,10 @@ if __name__ == '__main__':
     excel = None
     caseObject = None
     print("开始执行脚本")
+    adb = TAdb();
     try:
-        devices = TAdb().getAttachedDevices()
+        adb.startServer()
+        devices = adb.getAttachedDevices()
         if (len(devices) <= 0):
             raise Exception("未检测到设备")
         phoneInfo = TAdb().getPhoneInfo(devices[0])
@@ -236,7 +238,7 @@ if __name__ == '__main__':
         startTime = time.localtime()
         startDate = datetime.datetime.now()
         loginCaseOutPath = (
-        r"D:\Project\Python_Project\TestFramework\file\login\\" + str(time.strftime('%Y%m%d%H%M%S', startTime)));
+            r"D:\Project\Python_Project\TestFramework\file\login\\" + str(time.strftime('%Y%m%d%H%M%S', startTime)));
 
         print("启动真机或模拟器")
         # 开始
@@ -274,7 +276,7 @@ if __name__ == '__main__':
                 "result": str(caseObject.getCheckPointString()), "remarks": "日志名:" + str(caseObject.getLogName()),
                 "screenshot": "无"}
         excel.initDetailData(info)
-        del excel
+        excel.close()
         print("统计数据完毕,正在发送邮箱…")
         email = TEmail(r"D:\Project\Python_Project\TestFramework\file\email.ini")
         email.sendMail(excelOutFilePath)
@@ -282,6 +284,8 @@ if __name__ == '__main__':
     except Exception as ex:
         print(ex)
     finally:
+        if (adb != None):
+            del adb;
         if (caseObject != None):
             del caseObject
         if (excel != None):

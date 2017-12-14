@@ -65,7 +65,7 @@ class TExcel:
         self.initDetailHead(detailName)
         self.detailWorksheetLine = 2
 
-    def __del__(self):
+    def close(self):
         self.workbook.close();
 
     def getWorkbook(self):
