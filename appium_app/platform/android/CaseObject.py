@@ -263,7 +263,7 @@ if __name__ == '__main__':
 
         apk = TAapk(r"D:\Project\Python_Project\TestFramework\file\app-sit2.8.2A2017-12-09-18.apk")
         sum = {'testSumDate': str((endDate - startDate).seconds) + '秒', 'sum': caseNum, 'pass': casePass,
-               'testDate': str(time.strftime('%Y-%m-%d-%H-%M-%S', startTime)),
+               'testDate': str(time.strftime('%Y-%m-%d %H-%M-%S', startTime)),
                'fail': caseFail,
                'appVersion': apk.getApkVersionName(), 'appSize': apk.getApkSize(), 'appName': apk.getApkName()}
         excel.initStatisticsData(sum)

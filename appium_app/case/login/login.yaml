@@ -15,9 +15,9 @@ steps:
       find: id
       event: setValue
       params:
-            value: 111111111
+            value: 888888
             clear: 18
-      description: 密码赋值：111111111
+      description: 密码赋值：888888
     - element: login_button
       elementIos: login_button
       find: id
