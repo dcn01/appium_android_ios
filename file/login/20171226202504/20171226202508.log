@@ -1,0 +1,6 @@
+2017-12-26 20:25:08,882  - INFO - 开始初始化appium client ip:localhost port:4723
+2017-12-26 20:25:32,699  - INFO - 开始初始化案例信息
+2017-12-26 20:25:32,700  - INFO - 案例信息:{'id': 'login02', 'name': '登陆', 'description': '测试正常登陆'}
+2017-12-26 20:25:33,702  - INFO - 开始初始化案例步骤
+2017-12-26 20:25:39,099  - INFO - 执行步骤:{'element': 'android.widget.EditText', 'elementIos': None, 'find': 'class_name', 'index': 0, 'event': 'setValue', 'params': {'value': 18375547218}, 'description': '帐号赋值：18375547218'}
+2017-12-26 20:26:20,425  - ERROR - 案例步骤 error:案例步骤：元素android.widget.EditText未找到

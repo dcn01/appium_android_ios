@@ -1,0 +1,5 @@
+2017-12-26 20:28:34,875  - INFO - 开始初始化appium client ip:localhost port:4723
+2017-12-26 20:28:58,666  - INFO - 开始初始化案例信息
+2017-12-26 20:28:58,666  - INFO - 案例信息:{'id': 'login02', 'name': '登陆', 'description': '测试正常登陆'}
+2017-12-26 20:28:59,666  - INFO - 开始初始化案例步骤
+2017-12-26 20:29:07,436  - INFO - 执行步骤:{'element': 'android.widget.EditText', 'elementIos': None, 'find': 'class_name', 'index': 0, 'event': 'setValue', 'params': {'value': 18375547218}, 'description': '帐号赋值：18375547218'}

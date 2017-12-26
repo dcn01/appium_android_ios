@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <script type="text/javascript">
+
+        function JsExecCmd(value) {
+            var cmd = new ActiveXObject("WScript.Shell");
+            alert(cmd)
+            /*
+            命令参数说明
+            cmd.exe /c dir 是执行完dir命令后关闭命令窗口。
+            cmd.exe /k dir 是执行完dir命令后不关闭命令窗口。
+            cmd.exe /c start dir 会打开一个新窗口后执行dir指令，原窗口会关闭。
+            cmd.exe /k start dir 会打开一个新窗口后执行dir指令，原窗口不会关闭。
+            */
+            //执行完cmd命令后不关闭命令窗口。
+            cmd.run("cmd.exe /k " + value);
+            //执行完cmd命令后不关闭命令窗口。
+            cmd.run("cmd.exe /k " + value);
+            cmd = null;
+        }
+
+        function runcmd() {
+            command = "python D:/Project/Python_Project/TestFramework/appium_app/platform/android/CaseObject.py";
+            JsExecCmd(command)
+        } </script>
+</head>
+<body><a href="#" onclick="runcmd(); return false;">执行登陆案例</a>
+</body>
+</html>

@@ -1,0 +1,13 @@
+2017-12-26 20:47:42,613  - INFO - 开始初始化appium client ip:localhost port:4723
+2017-12-26 20:48:06,766  - INFO - 开始初始化案例信息
+2017-12-26 20:48:06,767  - INFO - 案例信息:{'id': 'login02', 'name': '登陆', 'description': '测试正常登陆'}
+2017-12-26 20:48:07,768  - INFO - 开始初始化案例步骤
+2017-12-26 20:48:13,456  - INFO - 执行步骤:{'element': 'android.widget.EditText', 'elementIos': None, 'find': 'class_name', 'event': 'setValue', 'params': {'value': 18375547218}, 'description': '帐号赋值：18375547218'}
+2017-12-26 20:48:48,649  - INFO - 执行步骤结果:成功
+2017-12-26 20:48:54,617  - INFO - 执行步骤:{'element': 'password', 'elementIos': 'password', 'find': 'id', 'event': 'setValue', 'params': {'value': 888888, 'clear': 18}, 'description': '密码赋值：888888'}
+2017-12-26 20:49:11,779  - INFO - 执行步骤结果:成功
+2017-12-26 20:49:14,781  - INFO - 执行步骤:{'element': 'login_button', 'elementIos': 'login_button', 'find': 'id', 'event': 'click', 'description': '点击登陆'}
+2017-12-26 20:49:15,335  - INFO - 执行步骤结果:成功
+2017-12-26 20:49:15,336  - INFO - 开始案例检测点
+2017-12-26 20:49:15,337  - INFO - 案例检测点信息:{'element': 'line_home', 'elementIos': 'line_home', 'find': 'id', 'event': 'exist', 'description': '检测是否进入到了首页'}
+2017-12-26 20:50:23,069  - ERROR - 案例检测点 error:案例检测点：元素line_home未找到

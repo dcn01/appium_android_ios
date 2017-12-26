@@ -1,0 +1,13 @@
+2017-12-12 15:16:06,212  - INFO - 开始初始化appium client ip:localhost port:4723
+2017-12-12 15:16:31,449  - INFO - 开始初始化案例信息
+2017-12-12 15:16:31,449  - INFO - 案例信息:{'id': 'login01', 'name': '登陆', 'description': '测试正常登陆'}
+2017-12-12 15:16:32,449  - INFO - 开始初始化案例步骤
+2017-12-12 15:16:35,465  - INFO - 执行步骤:{'element': 'phone_num', 'elementIos': 'phone_num', 'find': 'id', 'event': 'setValue', 'params': {'value': 18375547218}, 'description': '帐号赋值：18375547218'}
+2017-12-12 15:16:36,109  - INFO - 执行步骤结果:成功
+2017-12-12 15:16:39,148  - INFO - 执行步骤:{'element': 'password', 'elementIos': 'password', 'find': 'id', 'event': 'setValue', 'params': {'value': 111111111, 'clear': 18}, 'description': '密码赋值：111111111'}
+2017-12-12 15:16:55,020  - INFO - 执行步骤结果:成功
+2017-12-12 15:16:58,020  - INFO - 执行步骤:{'element': 'login_button', 'elementIos': 'login_button', 'find': 'id', 'event': 'click', 'description': '点击登陆'}
+2017-12-12 15:16:58,880  - INFO - 执行步骤结果:成功
+2017-12-12 15:16:58,880  - INFO - 开始案例检测点
+2017-12-12 15:16:58,880  - INFO - 案例检测点信息:{'element': 'line_home', 'elementIos': 'line_home', 'find': 'id', 'event': 'exist', 'description': '检测是否进入到了首页'}
+2017-12-12 15:16:59,960  - INFO - 案例检测成功

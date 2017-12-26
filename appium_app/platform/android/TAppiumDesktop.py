@@ -21,11 +21,11 @@ rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 
 find_id = "id"
-find_ids = "ids"
 find_xpath = "xpath"
 find_xpaths = "xpaths"
-find_class_name = "class_name"
+find_class_name = "class_name" #单个
 find_css = "css"
+find_name = "name"
 
 event_click = "click"
 event_swipeDown = "swipeDown"
@@ -95,23 +95,20 @@ class TAppiumDesktop(TAppiumServer):
 
     # 查找元素--->find-->findtype:id/ids/xpath -->index
     def find(self, findType, findField, index=0):
+        # self.getDirver().findElement(By.xpath("//android.widget.Toast[1]"));
         try:
             if (findType == find_id):  # id
                 return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_element_by_id(findField))
-            elif (findType == find_ids):  # ids
-                return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_elements_by_id(findField))[
-                    index]
+            elif (findType == find_name):  # name
+                return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_element_by_name(findField))
             elif (findType == find_xpath):  # xpath
                 return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_element_by_xpath(findField))
             elif (findType == find_xpaths):  # xpaths
-                return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_elements_by_xpath(findField))[
-                    index]
-            elif (findType == find_class_name):  # class
-                return WebDriverWait(self.getDirver(), timeout).until(
-                    lambda x: x.find_element_by_class_name(findField))
+                return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_elements_by_xpath(findField))[index]
+            elif (findType == find_class_name):  # class 单个
+                return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_element_by_class_name(findField))
             elif (findType == find_css):  # css
-                return WebDriverWait(self.getDirver(), timeout).until(
-                    lambda x: x.find_element_by_css_selector(findField))
+                return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_element_by_css_selector(findField))
         except selenium.common.exceptions.TimeoutException:  # 超时
             return None
         except selenium.common.exceptions.NoSuchElementException:  # 不存在

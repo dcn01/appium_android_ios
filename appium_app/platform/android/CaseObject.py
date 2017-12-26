@@ -129,7 +129,7 @@ class CaseObject:
         if ("description" in step):
             self.stepsInfos.append(step["description"] + "\n")
         item = None;
-        if (step["find"] == "ids" or step["find"] == "xpaths"):
+        if (step["find"] == "xpaths"):
             item = self.appiumDesktop.find(step["find"], step["element"], step["index"])
         else:
             item = self.appiumDesktop.find(step["find"], step["element"])
@@ -160,7 +160,7 @@ class CaseObject:
         if ("description" in checkpoint):
             self.checkPointInfo = checkpoint["description"]
         item = None;
-        if (checkpoint["find"] == "ids" or checkpoint["find"] == "xpaths"):
+        if (checkpoint["find"] == "class" or checkpoint["find"] == "xpaths"):
             item = self.appiumDesktop.find(checkpoint["find"], checkpoint["element"], checkpoint["index"])
         else:
             item = self.appiumDesktop.find(checkpoint["find"], checkpoint["element"])
@@ -227,7 +227,7 @@ if __name__ == '__main__':
         desiredCaps['platformName'] = 'Android'
         desiredCaps['platformVersion'] = phoneInfo['system-realease']  # '7.1.1'
         desiredCaps['deviceName'] = phoneInfo['device']  # 'Test26'
-        desiredCaps['app'] = r"D:\Project\Python_Project\TestFramework\file\app-sit2.8.2A2017-12-09-18.apk"
+        desiredCaps['app'] = r"D:\Project\Python_Project\TestFramework\file\app-sit3.0.1A2017-12-2618.apk"
         desiredCaps['appPackage'] = 'com.uc56.ucexpressbao'
         desiredCaps['appActivity'] = '.activitys.SplashActivity'
         desiredCaps['resetKeyboard'] = True  # 将键盘给隐藏起来9
@@ -242,7 +242,7 @@ if __name__ == '__main__':
 
         print("启动真机或模拟器")
         # 开始
-        caseObject = CaseObjectAndroid(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login.yaml",
+        caseObject = CaseObjectAndroid(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login_class.yaml",
                                        loginCaseOutPath, desiredCaps)
         # 结束
         endDate = datetime.datetime.now()
@@ -261,7 +261,7 @@ if __name__ == '__main__':
             caseFail += 1
             caseNum += 1
 
-        apk = TAapk(r"D:\Project\Python_Project\TestFramework\file\app-sit2.8.2A2017-12-09-18.apk")
+        apk = TAapk(r"D:\Project\Python_Project\TestFramework\file\app-sit3.0.1A2017-12-2618.apk")
         sum = {'testSumDate': str((endDate - startDate).seconds) + '秒', 'sum': caseNum, 'pass': casePass,
                'testDate': str(time.strftime('%Y-%m-%d %H-%M-%S', startTime)),
                'fail': caseFail,
