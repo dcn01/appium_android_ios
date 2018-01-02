@@ -1,7 +1,0 @@
-2018-01-02 14:36:09,938  - INFO - 开始初始化appium client ip:localhost port:4723
-2018-01-02 14:36:36,691  - INFO - 开始初始化案例信息
-2018-01-02 14:36:36,691  - INFO - 案例信息:{'id': 'login03', 'name': '登陆', 'description': '测试正常登陆'}
-2018-01-02 14:36:37,692  - INFO - 开始初始化案例步骤
-2018-01-02 14:36:40,692  - INFO - 执行步骤:{'element': '//android.widget.EditText[1]', 'find': 'xpath', 'event': 'setValue', 'params': {'value': 18375547218}, 'description': '帐号赋值：18375547218'}
-2018-01-02 14:36:52,381  - INFO - 执行步骤结果:成功
-2018-01-02 14:36:55,383  - INFO - 执行步骤:{'element': 'android.widget.EditText', 'index': 2, 'find': 'class', 'event': 'setValue', 'params': {'value': 888888, 'clear': 18}, 'description': '密码赋值：888888'}

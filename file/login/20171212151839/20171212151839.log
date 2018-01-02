@@ -1,6 +1,0 @@
-2017-12-12 15:18:39,885  - INFO - 开始初始化appium client ip:localhost port:4723
-2017-12-12 15:19:03,252  - INFO - 开始初始化案例信息
-2017-12-12 15:19:03,252  - INFO - 案例信息:{'id': 'login01', 'name': '登陆', 'description': '测试正常登陆'}
-2017-12-12 15:19:04,253  - INFO - 开始初始化案例步骤
-2017-12-12 15:19:07,253  - INFO - 执行步骤:{'element': 'phone_num', 'elementIos': 'phone_num', 'find': 'id', 'event': 'setValue', 'params': {'value': 18375547218}, 'description': '帐号赋值：18375547218'}
-2017-12-12 15:19:07,469  - INFO - 执行步骤结果:成功

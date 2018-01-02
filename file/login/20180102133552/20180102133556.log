@@ -1,3 +1,0 @@
-2018-01-02 13:35:56,223  - INFO - 开始初始化appium client ip:localhost port:4723
-2018-01-02 13:35:58,297  - INFO - Could not get IP address for host: localhost
-2018-01-02 13:36:00,304  - ERROR - appium client error:<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>
