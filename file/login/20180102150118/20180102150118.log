@@ -1,0 +1,13 @@
+2018-01-02 15:01:18,247  - INFO - 开始初始化appium client ip:localhost port:4723
+2018-01-02 15:01:49,626  - INFO - 开始初始化案例信息
+2018-01-02 15:01:49,627  - INFO - 案例信息:{'id': 'login03', 'name': '登陆', 'description': '测试正常登陆'}
+2018-01-02 15:01:50,627  - INFO - 开始初始化案例步骤
+2018-01-02 15:01:53,627  - INFO - 执行步骤:{'element': '//android.widget.EditText[1]', 'find': 'xpath', 'event': 'setValue', 'params': {'value': 18375547218}, 'description': '帐号赋值：18375547218'}
+2018-01-02 15:02:12,318  - INFO - 执行步骤结果:成功
+2018-01-02 15:02:15,318  - INFO - 执行步骤:{'element': 'android.widget.EditText', 'index': 1, 'find': 'class', 'event': 'setValue', 'params': {'value': 888888, 'clear': 18}, 'description': '密码赋值：888888'}
+2018-01-02 15:02:39,105  - INFO - 执行步骤结果:成功
+2018-01-02 15:02:42,105  - INFO - 执行步骤:{'element': "//*[@text='登\u3000录']", 'find': 'xpath', 'event': 'click', 'description': '点击登陆'}
+2018-01-02 15:02:58,070  - INFO - 执行步骤结果:成功
+2018-01-02 15:02:58,070  - INFO - 开始案例检测点
+2018-01-02 15:02:58,070  - INFO - 案例检测点信息:{'element': 'line_home', 'find': 'xpath', 'event': 'exist', 'description': '检测是否进入到了首页'}
+2018-01-02 15:03:30,156  - ERROR - 案例检测点 error:案例检测点：元素line_home未找到

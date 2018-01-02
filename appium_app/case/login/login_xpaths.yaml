@@ -1,31 +1,30 @@
 info:
-    id: login01
+    id: login04
     name: 登陆
     description: 测试正常登陆
 steps:
-    - element: phone_num
-      elementIos: phone_num
-      find: id
+    - element: //android.widget.EditText
+      find: xpaths
+      index: 0
       event: setValue
       params:
             value: 18375547218
       description: 帐号赋值：18375547218
-    - element: password
-      elementIos: password
-      find: id
+    - element: //android.widget.EditText
+      index: 1
+      find: xpaths
       event: setValue
       params:
             value: 888888
             clear: 18
       description: 密码赋值：888888
-    - element: login_button
-      elementIos: login_button
-      find: id
+    - element: //*[@text='登　录']
+      find: xpaths
+      index: 0
       event: click
       description: 点击登陆
 checkpoint:
     element: line_home
-    elementIos: line_home
-    find: id
+    find: xpath
     event: exist
     description: 检测是否进入到了首页

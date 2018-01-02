@@ -129,7 +129,7 @@ class CaseObject:
         if ("description" in step):
             self.stepsInfos.append(step["description"] + "\n")
         item = None;
-        if (step["find"] == "xpaths"):
+        if (step["find"] == "class" or step["find"] == "xpaths"):
             item = self.appiumDesktop.find(step["find"], step["element"], step["index"])
         else:
             item = self.appiumDesktop.find(step["find"], step["element"])
@@ -237,13 +237,11 @@ if __name__ == '__main__':
         # appiumDesktop = TAppiumDesktop(desiredCaps);  # 设备连接属性
         startTime = time.localtime()
         startDate = datetime.datetime.now()
-        loginCaseOutPath = (
-            r"D:\Project\Python_Project\TestFramework\file\login\\" + str(time.strftime('%Y%m%d%H%M%S', startTime)));
+        loginCaseOutPath = (r"D:\Project\Python_Project\TestFramework\file\login\\" + str(time.strftime('%Y%m%d%H%M%S', startTime)));
 
         print("启动真机或模拟器")
         # 开始
-        caseObject = CaseObjectAndroid(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login_class.yaml",
-                                       loginCaseOutPath, desiredCaps)
+        caseObject = CaseObjectAndroid(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login_xpath.yaml",loginCaseOutPath, desiredCaps)
         # 结束
         endDate = datetime.datetime.now()
         print("执行完毕,正在统计数据")
