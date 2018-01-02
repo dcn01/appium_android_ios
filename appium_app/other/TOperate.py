@@ -4,7 +4,7 @@ import os
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 
-__author__ = 'shikun'
+__author__ = 'banketree'
 # -*- coding: utf-8 -*-
 from selenium.webdriver.support.ui import WebDriverWait
 import selenium.common.exceptions

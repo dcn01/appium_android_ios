@@ -8,6 +8,7 @@ import re
 import math
 from math import ceil
 import subprocess
+import sys
 
 
 # android 设备连接器
@@ -17,14 +18,17 @@ class TAdb(object):
     # 执行某命令 + 返回执行结果
     def sendCommand(self, command):
         resultText = ''
-        command_text = 'adb %s' % command
-        # print(command_text)
-        results = os.popen(command_text, "r")
-        while 1:
-            line = results.readline()
-            if not line: break
-            resultText += line
-        results.close()
+        try:
+            command_text = 'adb %s' % command
+            # print(command_text)
+            results = os.popen(command_text, "r")
+            while 1:
+                line = results.readline()
+                if not line: break
+                resultText += line
+            results.close()
+        except Exception as e:
+            print(e)
         return resultText
 
     # 检查任何快速启动装置
@@ -102,7 +106,14 @@ class TAdb(object):
         # print(result[4])
         return result[4]
 
-        # 安装apk  option( -r ) 加 -r 参数，保留已设定数据，重新安装
+    #获取app版本号
+    def getAppVersionName(self, packagename):
+        string = self.sendCommand("shell dumpsys package "+ packagename +"\"| grep versionName=\" ")
+        if string.find("versionName=") >= 0:
+            string = string.strip()
+            temp = string[len("versionName="):]
+            return temp;
+        return "";
 
     def isSoftinputShown(self):
         result = self.sendCommand("shell dumpsys input_method \"| grep mInputShown\" ")
@@ -113,6 +124,7 @@ class TAdb(object):
             return True;
         return False;
 
+    # 安装apk  option( -r ) 加 -r 参数，保留已设定数据，重新安装
     def installApk(self, filePath, option=""):
         result = "";
         if (len(option) > 0 == True):
@@ -131,7 +143,8 @@ class TAdb(object):
 
     #获取log日志
     def getLog(self):
-        return self.sendCommand("logcat")
+        result = self.sendCommand("logcat")
+        return result;
 
     # 获取管理员权限
     def root(self):
@@ -248,7 +261,10 @@ if __name__ == '__main__':
     # print(TAdb().sendCommand("devices"))
     # sleep(1)
 
-    for item in reuslt:
-        print(TAdb().getPhoneInfo(item))
-        print(TAdb().getPhoneMenTotal(item))
-        print(TAdb().getPhoneCpuKel(item))
+    # for item in reuslt:
+    #     print(TAdb().getPhoneInfo(item))
+    #     print(TAdb().getPhoneMenTotal(item))
+    #     print(TAdb().getPhoneCpuKel(item))
+
+    temp = TAdb().getAppVersion("com.uc56.ucexpressbao");
+    print(temp)

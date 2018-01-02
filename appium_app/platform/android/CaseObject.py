@@ -11,7 +11,6 @@ from appium_app.platform.android.TAapt import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 
-__author__ = 'shikun'
 # -*- coding: utf-8 -*-
 from selenium.webdriver.support.ui import WebDriverWait
 import selenium.common.exceptions
@@ -22,6 +21,7 @@ import time
 # 页面元素步骤
 '''
 
+__author__ = 'banketree'
 
 class CaseObject:
     caseInfo = None
@@ -32,6 +32,7 @@ class CaseObject:
     file = None
     tyaml = None
     yaml = None
+    adb = None
 
     # yaml
     # 执行步骤超时配置
@@ -44,7 +45,8 @@ class CaseObject:
         self.checkPointInfo = None  # 检测点数据
         self.checkPointStatus = False  # 默认检测点--》不通过
         self.logger = logger
-        self.logger = logger
+        self.adb = TAdb()
+        self.picture = ""
 
         self.appiumDesktop = appiumDesktop;
         self.file = TFile(yamlPath)
@@ -72,6 +74,8 @@ class CaseObject:
                 self.runStep(step)
         except Exception as e:
             self.logger.error("案例步骤 error:" + str(e))
+            self.saveScreen()
+            self.logger.error("日志:" + self.adb.getLog())
             return
 
         try:
@@ -79,7 +83,10 @@ class CaseObject:
             self.runCheckPoint(self.yaml["checkpoint"])
         except Exception as e:
             self.logger.error("案例检测点 error:" + str(e))
+            self.saveScreen()
+            self.logger.error("日志:" + self.adb.getLog())
             return
+        self.saveScreen()
 
     def __del__(self):
         if (self.file != None):
@@ -88,6 +95,20 @@ class CaseObject:
             del self.yaml;
         if (self.tyaml != None):
             del self.tyaml;
+        if (self.adb != None):
+            del self.adb;
+
+    def saveScreen(self):
+        try:
+            path = self.logger.getFilePath()
+            name = str(time.strftime('%Y%m%d%H%M%S', time.localtime())) + ".jpg"
+            self.appiumDesktop.shotScreen(path, name)
+            self.picture = path + "//" + name
+        except Exception as e:
+            print(e)
+
+    def getPicture(self):
+        return self.picture
 
     def getCaseInfo(self):  # 案例信息
         return self.caseInfo

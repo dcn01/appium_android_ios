@@ -46,9 +46,9 @@ class TAapk():
         versionCode = match.group(2)
         versionName = match.group(3)
 
-        print('packagename:' + packagename)
-        print('versionCode:' + versionCode)
-        print('versionName:' + versionName)
+        # print('packagename:' + packagename)
+        # print('versionCode:' + versionCode)
+        # print('versionName:' + versionName)
         return packagename, versionName, versionCode
 
     def getApkPackageName(self):
