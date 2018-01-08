@@ -24,7 +24,7 @@ find_id = "id"
 find_ids = "ids"
 find_xpath = "xpath"
 find_xpaths = "xpaths"
-find_class = "class" #单个
+find_class = "class"  # 单个
 find_css = "css"
 find_name = "name"
 
@@ -48,7 +48,7 @@ event_back = "back"
 timeout = 30
 
 
-#http://blog.csdn.net/zhuquan0814/article/details/50990782
+# http://blog.csdn.net/zhuquan0814/article/details/50990782
 
 def waitForElement(driver, idString):
     second = 0
@@ -85,6 +85,7 @@ class TAppiumDesktop(TAppiumServer):
     # def __init__(self, ip, desiredCaps):
     #     self.dirver = webdriver.Remote('http://' + ip + ':4723/wd/hub', desiredCaps)
     dirver = None
+
     def __init__(self, desiredCaps, ip="localhost", port="4723"):
         self.dirver = webdriver.Remote('http://' + ip + ':' + port + '/wd/hub', desiredCaps)
 
@@ -109,12 +110,15 @@ class TAppiumDesktop(TAppiumServer):
             elif (findType == find_xpath):  # xpath
                 return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_element_by_xpath(findField))
             elif (findType == find_xpaths):  # xpaths
-                return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_elements_by_xpath(findField))[index]
+                return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_elements_by_xpath(findField))[
+                    index]
             elif (findType == find_class):  # class
-                elements = WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_elements_by_class_name(findField))
+                elements = WebDriverWait(self.getDirver(), timeout).until(
+                    lambda x: x.find_elements_by_class_name(findField))
                 return elements.__getitem__(index)
             elif (findType == find_css):  # css
-                return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_element_by_css_selector(findField))
+                return WebDriverWait(self.getDirver(), timeout).until(
+                    lambda x: x.find_element_by_css_selector(findField))
         except selenium.common.exceptions.TimeoutException:  # 超时
             return None
         except selenium.common.exceptions.NoSuchElementException:  # 不存在
@@ -304,11 +308,10 @@ class TAppiumDesktop(TAppiumServer):
     # 截图
     def shotScreen(self, filePath, filename):
         try:
-            screenshotPath = os.path.join(filePath, filename)
-            if not os.path.exists(screenshotPath):
-                os.makedirs(screenshotPath)
+            if not os.path.exists(filePath):
+                os.makedirs(filePath)
             sleep(1)
-            self.getDirver().get_screenshot_as_file(os.path.join(screenshotPath + filename))
+            self.getDirver().get_screenshot_as_file(os.path.join(filePath + "//" + filename))
         except Exception:
             pass
 

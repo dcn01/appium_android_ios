@@ -1,81 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cadeade6-bb49-45fa-94e8-bc5fc9259610" name="Default" comment="初始框架">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171212151455/20171212151455.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171212151455/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171212151531/20171212151531.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171212151606/20171212151606.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171212151606/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171212151839/20171212151839.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213083437/20171213083437.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213083437/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213083543/20171213083543.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213083543/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213083609/20171213083609.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213083609/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213084023/20171213084023.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213084023/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213084140/20171213084140.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213084140/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213084254/20171213084254.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213084254/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213084344/20171213084344.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213084344/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213084745/20171213084745.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213084745/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213085705/20171213085705.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171213085705/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214085150/20171214085150.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214085150/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214085303/20171214085303.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214085303/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214085338/20171214085338.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214085338/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214090255/20171214090255.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214090255/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214152452/20171214152452.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214152452/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214153127/20171214153127.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171214153127/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171226202103/20171226202105.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171226202131/20171226202134.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171226202307/20171226202309.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171226202504/20171226202508.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171226202504/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171226202830/20171226202834.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171226202949/20171226202949.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171226203129/20171226203129.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171226204742/20171226204742.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20171226204742/report.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102104805/20180102104808.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102133552/20180102133556.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102133625/20180102133628.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102133749/20180102133840.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102134850/20180102134854.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102135042/20180102135043.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102142328/20180102142331.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102142619/20180102142705.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102143000/20180102143046.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102143245/20180102143245.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102143609/20180102143609.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102143837/20180102143837.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102143845/20180102143845.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102145133/20180102145133.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102145311/20180102145311.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102145511/20180102145511.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102145628/20180102145628.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102145824/20180102145824.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102150032/20180102150032.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102150118/20180102150118.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102152233/20180102152233.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102152404/20180102152404.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102160932/20180102160932.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102161101/20180102161101.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102161215/20180102161215.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/login/20180102161430/20180102161430.log" afterPath="" />
+    <list default="true" id="cadeade6-bb49-45fa-94e8-bc5fc9259610" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/appium_app/other/BaseInit.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/appium_app/other/TElementEnmu.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/appium_app/other/TOperate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/appium_app/other/TPickle.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/appium_app/other/TRunner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/appium_app/other/TRunner1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/appium_app/other/TStatistics.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file/caseOut/20180102214537/20180102214537.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file/caseOut/20180102214537/20180102214706.jpg20180102214706.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file/caseOut/20180102214537/20180102214710.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file/caseOut/20180102214537/20180102214802.jpg20180102214802.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file/caseOut/20180102214537/report.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file/email.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file/report_2017-12-10-16-26-07.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file/report_2017-12-10-16-27-58.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file/test.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file/test.yaml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkCore/TEmail.py" afterPath="$PROJECT_DIR$/ThinkCore/TEmail.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" afterPath="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py" afterPath="$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium_app/test/android/runner.py" afterPath="$PROJECT_DIR$/appium_app/test/android/runner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/email.ini" afterPath="$PROJECT_DIR$/email.ini" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -122,14 +71,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TAppiumDesktop.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py">
+      <file leaf-file-name="login_class.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_app/case/login/login_class.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1027">
-              <caret line="315" column="28" lean-forward="false" selection-start-line="315" selection-start-column="28" selection-end-line="315" selection-end-column="28" />
-              <folding>
-                <element signature="e#24#33#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="email.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/email.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,8 +94,8 @@
       <file leaf-file-name="CaseObject.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appium_app/platform/android/CaseObject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="371">
+              <caret line="299" column="64" lean-forward="false" selection-start-line="299" selection-start-column="64" selection-end-line="299" selection-end-column="64" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -146,38 +103,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runner.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/appium_app/test/android/runner.py">
+      <file leaf-file-name="login_id.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_app/case/login/login_id.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="116" column="19" lean-forward="false" selection-start-line="116" selection-start-column="19" selection-end-line="116" selection-end-column="19" />
-              <folding>
-                <element signature="e#16#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="361">
+              <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appium_app/test/android/test.py">
+      <file leaf-file-name="TEmail.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCore/TEmail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="88" lean-forward="false" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
-              <folding>
-                <element signature="e#15#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TAdb.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAdb.py">
+      <file leaf-file-name="TExcel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCore/TExcel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-              <folding>
-                <element signature="e#26#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TFile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCore/TFile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TLog.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCore/TLog.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TString.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThinkCore/TString.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TYaml.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ThinkCore/TYaml.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -194,7 +185,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>description</find>
       <find>TAdb</find>
       <find>hide</find>
       <find>event_exist</find>
@@ -224,6 +214,7 @@
       <find>开始执行</find>
       <find>versionCode</find>
       <find>成功</find>
+      <find>email.ini</find>
     </findStrings>
     <replaceStrings>
       <replace>FileUtil</replace>
@@ -250,8 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/appium_app/case/test/process/test3.py" />
-        <option value="$PROJECT_DIR$/appium_app/case/test/process/test4.py" />
         <option value="$PROJECT_DIR$/appium_app/case/test/process/test5.py" />
         <option value="$PROJECT_DIR$/appium_app/case/test/process/test8.py" />
         <option value="$PROJECT_DIR$/appium_app/case/test/process/test9.py" />
@@ -272,7 +261,6 @@
         <option value="$PROJECT_DIR$/file/login/20171210202311/20171210202316.log" />
         <option value="$PROJECT_DIR$/file/login/20171210203557/20171210203557.log" />
         <option value="$PROJECT_DIR$/file/login/20171210204214/20171210204214.log" />
-        <option value="$PROJECT_DIR$/ThinkCore/TEmail.py" />
         <option value="$PROJECT_DIR$/file/email.ini" />
         <option value="$PROJECT_DIR$/ThinkCore/TLog.py" />
         <option value="$PROJECT_DIR$/file/login/20171210212248/20171210212248.log" />
@@ -284,9 +272,7 @@
         <option value="$PROJECT_DIR$/appium_app/case/login/login.yaml" />
         <option value="$PROJECT_DIR$/appium_app/case/login/login_name.yaml" />
         <option value="$PROJECT_DIR$/appium_app/case/login/login_id.yaml" />
-        <option value="$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py" />
         <option value="$PROJECT_DIR$/appium_app/case/login/login_xpaths.yaml" />
-        <option value="$PROJECT_DIR$/appium_app/case/login/login_class.yaml" />
         <option value="$PROJECT_DIR$/appium_app/case/login/login.py" />
         <option value="$PROJECT_DIR$/appium_app/case/login/login_xpath.yaml" />
         <option value="$PROJECT_DIR$/appium_app/case/t/process/test1.py" />
@@ -299,8 +285,13 @@
         <option value="$PROJECT_DIR$/appium_app/platform/android/TAapt.py" />
         <option value="$PROJECT_DIR$/appium_app/platform/android/TAdb.py" />
         <option value="$PROJECT_DIR$/file/caseOut/20180102213357/20180102213358.log" />
-        <option value="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" />
+        <option value="$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py" />
+        <option value="$PROJECT_DIR$/email.ini" />
         <option value="$PROJECT_DIR$/appium_app/test/android/runner.py" />
+        <option value="$PROJECT_DIR$/appium_app/platform/android/CaseObject.py" />
+        <option value="$PROJECT_DIR$/ThinkCore/TEmail.py" />
+        <option value="$PROJECT_DIR$/appium_app/other/TPickle.py" />
+        <option value="$PROJECT_DIR$/appium_app/case/login/login_class.yaml" />
       </list>
     </option>
   </component>
@@ -332,7 +323,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,13 +333,43 @@
             <path>
               <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="appium_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="appium_app" type="462c0819:PsiDirectoryNode" />
+              <item name="case" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="appium_app" type="462c0819:PsiDirectoryNode" />
+              <item name="case" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="appium_app" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
               <item name="file" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="ThinkCore" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -816,7 +836,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514901040569</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="初始框架">
+      <created>1514901192361</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1514901192361</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -853,19 +880,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21208227" sideWeight="0.7891566" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13477089" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13881402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20886889" sideWeight="0.7891566" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21786633" sideWeight="0.21084337" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25067386" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25067386" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -873,6 +900,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -906,11 +934,6 @@
           <url>file://$PROJECT_DIR$/appium/platform/android/TAapt.py</url>
           <line>63</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ThinkCore/TYaml.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/appium_app/case/t/TestRun.py</url>
@@ -1145,141 +1168,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-181045577/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python36/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCore/TEmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="65" column="8" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/login/20171210212248/20171210212248.log" />
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/test7.py" />
-    <entry file="file://$PROJECT_DIR$/file/login/20171211192810/20171211192810.log" />
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/Test.html" />
-    <entry file="file://$PROJECT_DIR$/appium_app/case/login/login_name.yaml" />
-    <entry file="file://D:/python36/Lib/site-packages/selenium/webdriver/common/by.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/login/Test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/t/process/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/t/process/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/t/unittest/test4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/t/unittest/test6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/t/unittest/test5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="51" column="21" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="51" selection-end-column="21" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/t/unittest/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/t/process/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#22#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/t/process/test4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/t/process/test5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/t/process/test6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appium_app/case/t/process/test7.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-200">
           <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,7 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1295,7 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,7 +1193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1311,7 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-195">
           <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1327,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="596" column="0" lean-forward="false" selection-start-line="596" selection-start-column="0" selection-end-line="596" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1335,7 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="93" column="53" lean-forward="true" selection-start-line="93" selection-start-column="53" selection-end-line="93" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,7 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,15 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/login/login_id.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1385,14 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/case/login/login_class.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1405,58 +1273,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkCore/TExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="197" column="33" lean-forward="false" selection-start-line="197" selection-start-column="29" selection-end-line="197" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102204449/20180102204903.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102204449/20180102204734.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102204449/20180102204636.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102204449/20180102204455.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="12" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102205614/20180102205618.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102204449/20180102204903.log" />
+    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102204449/20180102204734.log" />
+    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102204449/20180102204636.log" />
+    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102204449/20180102204455.log" />
+    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102205614/20180102205618.log" />
     <entry file="file://D:/python36/Lib/multiprocessing/pool.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-339">
           <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAapt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-395">
+          <caret line="53" column="8" lean-forward="false" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102213357/20180102213358.log" />
+    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#26#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102214537/20180102214802.jpg20180102214802.jpg" />
+    <entry file="file://$PROJECT_DIR$/appium_app/test/android/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/test.jpg" />
+    <entry file="file://$PROJECT_DIR$/file/test.yaml" />
+    <entry file="file://$PROJECT_DIR$/appium_app/test/android/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/email.ini" />
+    <entry file="file://$PROJECT_DIR$/file/devices.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/other/TOperate.py" />
+    <entry file="file://$PROJECT_DIR$/appium_app/other/TPickle.py" />
+    <entry file="file://$PROJECT_DIR$/appium_app/other/TRunner.py" />
+    <entry file="file://$PROJECT_DIR$/appium_app/other/TRunner1.py" />
+    <entry file="file://$PROJECT_DIR$/appium_app/other/TStatistics.py" />
+    <entry file="file://$PROJECT_DIR$/appium_app/other/BaseInit.py" />
+    <entry file="file://$PROJECT_DIR$/appium_app/other/TElementEnmu.py" />
+    <entry file="file://$PROJECT_DIR$/appium_app/other/TWebServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/other/HTMLTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/other/THttp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="313" column="79" lean-forward="false" selection-start-line="313" selection-start-column="79" selection-end-line="313" selection-end-column="79" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/case/login/login_id.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/CaseObject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="299" column="64" lean-forward="false" selection-start-line="299" selection-start-column="64" selection-end-line="299" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_app/case/login/login_class.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/email.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCore/TEmail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCore/TExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="58" column="12" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkCore/TFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1469,69 +1444,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAapt.py">
+    <entry file="file://$PROJECT_DIR$/ThinkCore/TString.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-395">
-          <caret line="53" column="8" lean-forward="false" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/caseOut/20180102213357/20180102213358.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101108">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAppiumDesktop.py">
+    <entry file="file://$PROJECT_DIR$/ThinkCore/TYaml.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1027">
-          <caret line="315" column="28" lean-forward="false" selection-start-line="315" selection-start-column="28" selection-end-line="315" selection-end-column="28" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/test/android/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="88" lean-forward="false" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
-          <folding>
-            <element signature="e#15#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/TAdb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <element signature="e#26#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/platform/android/CaseObject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appium_app/test/android/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="116" column="19" lean-forward="false" selection-start-line="116" selection-start-column="19" selection-end-line="116" selection-end-column="19" />
-          <folding>
-            <element signature="e#16#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

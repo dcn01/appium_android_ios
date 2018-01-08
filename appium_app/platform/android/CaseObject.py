@@ -297,7 +297,7 @@ if __name__ == '__main__':
         excel.initDetailData(info)
         excel.close()
         print("统计数据完毕,正在发送邮箱…")
-        email = TEmail(r"D:\Project\Python_Project\TestFramework\file\email.ini")
+        email = TEmail(r"D:\Project\Python_Project\TestFramework\email.ini")
         email.sendMail(excelOutFilePath)
         print("发送邮箱完毕")
     except Exception as ex:

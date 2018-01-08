@@ -99,10 +99,9 @@ class TEmail:
             smtpServer.quit()
 
 
-if __name__ == '__main__':
-    email = TEmail(r"D:\Project\Python_Project\TestFramework\file\email.ini")
-    email.sendMail(r"D:\Project\Python_Project\TestFramework\file\11111.txt")
-
+# if __name__ == '__main__':
+    # email = TEmail(r"D:\Project\Python_Project\TestFramework\email.ini")
+    # email.sendMail(r"D:\Project\Python_Project\TestFramework\file\11111.txt")
 
     # def test(self):
     #     # 第三方 SMTP 服务

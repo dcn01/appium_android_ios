@@ -51,19 +51,19 @@ class TestCaseRunner():
 def func(apkPath, device, aapk):
     print("进程-" + str(os.getpid()) + "-执行开始")
     adb = TAdb();
-    cases = []
+    yamlCases = []
     startTime = time.localtime()
     startDate = datetime.datetime.now()
 
     try:
-        caseOutPath = (r"D:\Project\Python_Project\TestFramework\file\caseOut\\" + str(time.strftime('%Y%m%d%H%M%S', startTime)));
+        caseOutPath = (r"D:\Project\Python_Project\TestFramework\file\\" + str(time.strftime('%Y%m%d%H%M%S', startTime)) + random.randint(0,99));
         phoneInfo = adb.getPhoneInfo(device)
-        cases.append(TestCaseRunner(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login_id.yaml",caseOutPath,getDesiredCaps(apkPath, device)))
-        cases.append(TestCaseRunner(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login_class.yaml",caseOutPath,getDesiredCaps(apkPath, device)))
-        # cases.append(TestCaseRunner(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login_xpath.yaml",caseOutPath,getDesiredCaps(apkPath, device)))
-        # cases.append(TestCaseRunner(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login_xpaths.yaml",caseOutPath,getDesiredCaps(apkPath, device)))
+        yamlCases.append(TestCaseRunner(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login_id.yaml",caseOutPath,getDesiredCaps(apkPath, device)))
+        yamlCases.append(TestCaseRunner(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login_class.yaml",caseOutPath,getDesiredCaps(apkPath, device)))
+        # yamlCases.append(TestCaseRunner(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login_xpath.yaml",caseOutPath,getDesiredCaps(apkPath, device)))
+        # yamlCases.append(TestCaseRunner(r"D:\Project\Python_Project\TestFramework\appium_app\case\login\login_xpaths.yaml",caseOutPath,getDesiredCaps(apkPath, device)))
         # ……
-        for case in cases:
+        for case in yamlCases:
             try:
                 case.runCase();
             except Exception as ex2:
@@ -84,9 +84,9 @@ def func(apkPath, device, aapk):
 
     casePass = 0
     caseFail = 0
-    caseNum = len(cases)
+    caseNum = len(yamlCases)
 
-    for case in cases:
+    for case in yamlCases:
         caseObject = case.getCaseObject();
         if(caseObject==None):
             continue
@@ -97,11 +97,15 @@ def func(apkPath, device, aapk):
 
         caseInfo = caseObject.getCaseInfo()
         checkPointInfo = caseObject.getCheckPointInfo()
+        picture = "无"
+        if(caseObject.getPicture() != "" and TFile(caseObject.getPicture()).existFile()):
+            picture = caseObject.getPicture();
+
         info = {"phoneClass": phoneInfo["brand"], "id": caseInfo["id"], "caseName": caseInfo["name"],
                 "caseDescription": str(caseInfo["description"]), "caseFunction": "无",
                 "precondition": "无", "step": str(caseObject.getStepsInfos()), "checkpoint": str(checkPointInfo),
                 "result": str(caseObject.getCheckPointString()), "remarks": "日志名:" + str(caseObject.getLogName()),
-                "screenshot": "无"}
+                "screenshot": picture}
         excel.initDetailData(info)
 
     sum = {'testSumDate': str((endDate - startDate).seconds) + '秒', 'sum': caseNum, 'pass': casePass,
@@ -112,7 +116,7 @@ def func(apkPath, device, aapk):
 
     excel.close()
     print("统计数据完毕,正在发送邮箱…")
-    email = TEmail(r"D:\Project\Python_Project\TestFramework\file\email.ini")
+    email = TEmail(r"D:\Project\Python_Project\TestFramework\email.ini")
     email.sendMail(excelOutFilePath)
     print("发送邮箱完毕")
 
@@ -177,5 +181,5 @@ def run(apkPath):
     pool.join()  # 调用join之前，先调用close函数，否则会出错。执行完close后不会有新的进程加入到pool,join函数等待所有子进程结束
     print("执行脚本結束")
 
-    # if __name__ == "__main__":
-    #     run();
+if __name__ == "__main__":
+    run(r"D:\Project\Python_Project\TestFramework\file\app-sit3.0.1A-2017-12-2716.apk")
