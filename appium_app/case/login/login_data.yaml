@@ -1,0 +1,13 @@
+info:
+    description: 登陆参数
+    phone: 账户
+    password: 密码
+params:
+    - phone: 18375547218
+      password: 111111111
+    - phone: 18375547218
+      password: 111111111
+    - phone: 18375547218
+      password: 111111111
+    - phone: 18375547218
+      password: 111111111

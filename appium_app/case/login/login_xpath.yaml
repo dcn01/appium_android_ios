@@ -3,25 +3,25 @@ info:
     name: 登陆
     description: 测试正常登陆
 steps:
-    - element: //android.widget.ScrollView//android.widget.EditText[1]
+    - event: setValue
+      element: //android.widget.ScrollView//android.widget.EditText[1]
       find: xpath
-      event: setValue
       params:
-            value: 18375547218
-      description: 帐号赋值：18375547218
-    - element: //android.widget.ScrollView//android.widget.EditText[@resource-id="com.uc56.ucexpressbao:id/password"]
+            value: phone
+      description: 帐号赋值
+    - event: setValue
+      element: //android.widget.ScrollView//android.widget.EditText[@resource-id="com.uc56.ucexpressbao:id/password"]
       find: xpath
-      event: setValue
       params:
-            value: 888888
+            value: password
             clear: 18
-      description: 密码赋值：888888
-    - element: //*[@text='登　录']
+      description: 密码赋值
+    - event: click
+      element: //*[@text='登　录']
       find: xpath
-      event: click
       description: 点击登陆
 checkpoint:
+    event: exist
     element: line_home
     find: xpath
-    event: exist
     description: 检测是否进入到了首页

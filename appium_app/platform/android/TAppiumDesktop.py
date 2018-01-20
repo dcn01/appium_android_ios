@@ -12,6 +12,7 @@ from appium_app.platform.android.TAdb import *
 from appium_app.platform.android.TAppiumServer import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
+import appium_app.platform.core.Executor
 
 import sys
 import os
@@ -20,31 +21,24 @@ curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 
-find_id = "id"
-find_ids = "ids"
-find_xpath = "xpath"
-find_xpaths = "xpaths"
-find_class = "class"  # 单个
-find_css = "css"
-find_name = "name"
-
-event_click = "click"
-event_swipeDown = "swipeDown"
-event_swipeUp = "swipeUp"
-event_swipeLeft = "swipeLeft"
-event_swipeRight = "swipeRight"
-event_setValue = "setValue"
-event_getValue = "getValue"
-event_message = "message"
-event_adb = "adb"
-event_press = "press"
-event_keyevent = "keyevent"
-event_sleep = "sleep"
-event_toWebview = "toWebview"
-event_toNative = "toNative"
-event_equal = "equal"
-event_exist = "exist"
-event_back = "back"
+#
+# event_click = "click"
+# event_swipeDown = "swipeDown"
+# event_swipeUp = "swipeUp"
+# event_swipeLeft = "swipeLeft"
+# event_swipeRight = "swipeRight"
+# event_setValue = "setValue"
+# event_getValue = "getValue"
+# event_message = "message"
+# event_adb = "adb"
+# event_press = "press"
+# event_keyevent = "keyevent"
+# event_sleep = "sleep"
+# event_toWebview = "toWebview"
+# event_toNative = "toNative"
+# event_equal = "equal"
+# event_exist = "exist"
+# event_back = "back"
 timeout = 30
 
 
@@ -98,25 +92,27 @@ class TAppiumDesktop(TAppiumServer):
         return self.dirver;
 
     # 查找元素--->find-->findtype:id/ids/xpath -->index
-    def find(self, findType, findField, index=0):
-        # self.getDirver().f()
+    def find(self, findField, findType, index=0):
+        element = super().event(findField, findType, index)
+        if (element != None):
+            return element;
         try:
-            if (findType == find_id):  # id
+            if (findType == Executor.Find_id):  # id
                 return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_element_by_id(findField))
-            elif (findType == find_ids):  # ids -->[list]
+            elif (findType == Executor.Find_ids):  # ids -->[list]
                 return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_elements_by_id(findField))[index]
-            elif (findType == find_name):  # name
+            elif (findType == Executor.Find_name):  # name
                 return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_element_by_name(findField))
-            elif (findType == find_xpath):  # xpath
+            elif (findType == Executor.Find_xpath):  # xpath
                 return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_element_by_xpath(findField))
-            elif (findType == find_xpaths):  # xpaths
+            elif (findType == Executor.Find_xpaths):  # xpaths
                 return WebDriverWait(self.getDirver(), timeout).until(lambda x: x.find_elements_by_xpath(findField))[
                     index]
-            elif (findType == find_class):  # class
+            elif (findType == Executor.Find_class):  # class
                 elements = WebDriverWait(self.getDirver(), timeout).until(
                     lambda x: x.find_elements_by_class_name(findField))
                 return elements.__getitem__(index)
-            elif (findType == find_css):  # css
+            elif (findType == Executor.Find_css):  # css
                 return WebDriverWait(self.getDirver(), timeout).until(
                     lambda x: x.find_element_by_css_selector(findField))
         except selenium.common.exceptions.TimeoutException:  # 超时
@@ -127,54 +123,63 @@ class TAppiumDesktop(TAppiumServer):
             print(e)
             return None
 
-    def event(self, element, eventType="click", params=None):
+    def event(self, element, eventType="click", params=None, yamlParam=None):
+        if (super().event(element, eventType, params, yamlParam) == True):
+            return True
+
         try:
-            if (eventType == event_click):  # 点击事件
+            if (eventType == Executor.Event_click):  # 点击事件
                 element.click();
-            elif (eventType == event_swipeDown):
+            elif (eventType == Executor.Event_swipeDown):
                 self.swipeToDown()
-            elif (eventType == event_swipeUp):
+            elif (eventType == Executor.Event_swipeUp):
                 self.swipeToUp()
-            elif (eventType == event_swipeLeft):
+            elif (eventType == Executor.Event_swipeLeft):
                 self.swipeToLeft()
-            elif (eventType == event_swipeRight):
+            elif (eventType == Executor.Event_swipeRight):
                 self.swipeToRight()
-            elif (eventType == event_setValue):  # 赋值 事件 value
+            elif (eventType == Executor.Event_setValue):  # 赋值 事件 value
                 if (params == None or 'value' not in params):
                     self.setValue("")
                     return True
                 if ('clear' in params):
                     self.clearValue(element, params["clear"])
-                self.setValue(element, str(params['value']))
-            elif (eventType == event_getValue):
+                if (yamlParam != None):
+                    self.setValue(element, yamlParam[str(params['value'])])
+                else:
+                    self.setValue(element, str(params['value']))
+            elif (eventType == Executor.Event_getValue):
                 pass
-            elif (eventType == event_message):
+            elif (eventType == Executor.Event_message):
                 pass
-            elif (eventType == event_adb):  # cmd 事件
+            elif (eventType == Executor.Event_adb):  # cmd 事件
                 adb = TAdb()
                 adb.sendCommand(params["cmd"])
                 del adb
-            elif (eventType == event_press):  # code 事件
+            elif (eventType == Executor.Event_press):  # code 事件
                 self.getDirver().press_keycode(params["code"])
-            elif (eventType == event_keyevent):  # keyevent 事件
+            elif (eventType == Executor.Event_keyevent):  # keyevent 事件
                 self.getDirver().keyevent(params["code"])
-            elif (eventType == event_sleep):  # 睡眠 second
+            elif (eventType == Executor.Event_sleep):  # 睡眠 second
                 sleep(params["second"])
-            elif (eventType == event_toWebview):  # 切换-->webview
+            elif (eventType == Executor.Event_toWebview):  # 切换-->webview
                 self.toWebview()
-            elif (eventType == event_toNative):  # 切换--> native
+            elif (eventType == Executor.Event_toNative):  # 切换--> native
                 self.getDirver().switch_to.context("NATIVE_APP")
-            elif (eventType == event_equal):  # 是否相等
+            elif (eventType == Executor.Event_equal):  # 是否相等
                 if (params == None or 'value' not in params):
                     return False
-                if (self.getValue(element) == str(params['value'])):
+
+                if (yamlParam != None and self.getValue(element) == yamlParam[str(params['value'])]):
+                    return True
+                elif (self.getValue(element) == str(params['value'])):
                     return True
                 return False
-            elif (eventType == event_exist):  # 是否存在
+            elif (eventType == Executor.Event_exist):  # 是否存在
                 if (element != None):
                     return True
                 return False
-            elif (eventType == event_back):  # 回退
+            elif (eventType == Executor.Event_back):  # 回退
                 self.getDirver().press_keycode(params['code'])
                 return False
             pass

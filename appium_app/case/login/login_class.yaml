@@ -3,29 +3,29 @@ info:
     name: 登陆
     description: 测试正常登陆
 steps:
-    - element: android.widget.EditText
+    - event: setValue
+      element: android.widget.EditText
       index: 0
       find: class
-      event: setValue
       params:
-            value: 18375547218
-      description: 帐号赋值：18375547218
-    - element: android.widget.EditText
+            value: phone
+      description: 帐号赋值
+    - event: setValue
+      element: android.widget.EditText
       index: 1
       find: class
-      event: setValue
       params:
-            value: 111111111
+            value: password
             clear: 18
-      description: 密码赋值：111111111
-    - element: android.widget.Button
+      description: 密码赋值
+    - event: click
+      element: android.widget.Button
       index: 2
       find: class
-      event: click
       description: 点击登陆
 checkpoint:
+    event: exist
     element: line_home
     index:
     find: class
-    event: exist
     description: 检测是否进入到了首页

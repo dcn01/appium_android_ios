@@ -3,29 +3,29 @@ info:
     name: 登陆
     description: 测试正常登陆
 steps:
-    - element: phone_num
+    - event: setValue
+      element: phone_num
       elementIos: phone_num
       find: id
-      event: setValue
       params:
-            value: 18375547218
-      description: 帐号赋值：18375547218
-    - element: password
+            value: phone
+      description: 帐号赋值
+    - event: setValue
+      element: password
       elementIos: password
       find: id
-      event: setValue
       params:
-            value: 111111111
+            value: password
             clear: 18
-      description: 密码赋值：111111111
-    - element: login_button
+      description: 密码赋值
+    - event: click
+      element: login_button
       elementIos: login_button
       find: id
-      event: click
       description: 点击登陆
 checkpoint:
+    event: exist
     element: line_home
     elementIos: line_home
     find: id
-    event: exist
     description: 检测是否进入到了首页
